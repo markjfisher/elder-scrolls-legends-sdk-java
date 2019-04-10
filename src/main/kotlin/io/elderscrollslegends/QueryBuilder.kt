@@ -15,8 +15,7 @@ class QueryBuilder {
         val page = adjustedPredicates.getOrDefault("page", "1")
         adjustedPredicates["page"] = page
 
-        val items =
-            unirestClient.get(resource = resource, cls = cls, queryParams = adjustedPredicates) ?: return emptyList()
+        val items = unirestClient.get(resource = resource, cls = cls, queryParams = adjustedPredicates) ?: return emptyList()
 
         val results = mutableListOf<T>()
         adder(items, results)
@@ -26,8 +25,8 @@ class QueryBuilder {
         val totalPageCount = items.totalCount / items.pageSize + if (items.totalCount % items.pageSize == 0) 0 else 1
         for (nextPage in (page.toInt() + 1)..totalPageCount) {
             adjustedPredicates["page"] = nextPage.toString()
-            val items = unirestClient.get(resource = resource, cls = cls, queryParams = adjustedPredicates)
-            adder(items, results)
+            val newItems = unirestClient.get(resource = resource, cls = cls, queryParams = adjustedPredicates)
+            adder(newItems, results)
         }
 
         return results
