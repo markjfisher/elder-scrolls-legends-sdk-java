@@ -18,18 +18,18 @@ class SetTests {
     @Test
     fun `find Set by id`() {
         // Given
-        val setId = "cs"
+        val setId = "fsc"
         val set = String(this::class.java.getResource("/set-fsc.json").readBytes())
         every { client.request(any(), any<Function<RawResponse, HttpResponse<JsonNode>>>()) } returns response
         every { response.isSuccess } returns true
         every { response.body } returns JsonNode(set)
 
         // when
-        val x = Set.find(setId)
+        val result = Set.find(setId)
 
         // then
-        assertThat(x).isNotNull
-        assertThat(x!!).satisfies {
+        assertThat(result).isNotNull
+        assertThat(result!!).satisfies {
             assertThat(it.id).isEqualTo("fsc")
             assertThat(it.name).isEqualTo("FrostSpark Collection")
             assertThat(it.releaseDate).isEqualTo("2018-10-19")

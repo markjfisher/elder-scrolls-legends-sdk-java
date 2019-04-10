@@ -1,0 +1,12 @@
+{
+  "attributes": [
+    "Intelligence",
+    "Neutral"
+  ],
+  "_links": {
+    "next": "https://api.elderscrollslegends.io/v1/attributes?page=3&pageSize=2",
+    "prev": "https://api.elderscrollslegends.io/v1/attributes?pageSize=2"
+  },
+  "_pageSize": 2,
+  "_totalCount": 6
+}

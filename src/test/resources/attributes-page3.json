@@ -1,0 +1,11 @@
+{
+  "attributes": [
+    "Strength",
+    "Willpower"
+  ],
+  "_links": {
+    "prev": "https://api.elderscrollslegends.io/v1/attributes?page=2&pageSize=2"
+  },
+  "_pageSize": 2,
+  "_totalCount": 6
+}

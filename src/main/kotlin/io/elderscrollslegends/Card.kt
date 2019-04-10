@@ -48,7 +48,7 @@ data class Cards(
     override val pageSize: Int,
     @JsonProperty("_totalCount")
     override val totalCount: Int
-) : ItemType(pageSize, totalCount)
+) : ResultCounters(pageSize, totalCount)
 
 data class CardSingle(
     val card: Card

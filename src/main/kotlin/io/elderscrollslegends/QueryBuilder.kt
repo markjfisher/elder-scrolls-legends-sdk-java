@@ -7,7 +7,7 @@ class QueryBuilder {
         return unirestClient.find(resource, id, cls, queryParams)
     }
 
-    fun <S : ItemType, T> where(resource: String, cls: Class<S>, predicates: Map<String, String> = emptyMap(), adder: (S?, MutableList<T>) -> Unit): List<T> {
+    fun <S : ResultCounters, T> where(resource: String, cls: Class<S>, predicates: Map<String, String> = emptyMap(), adder: (S?, MutableList<T>) -> Unit): List<T> {
         val adjustedPredicates = predicates.toMutableMap()
 
         val singlePageOnly = predicates.containsKey("page")

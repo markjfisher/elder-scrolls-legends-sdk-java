@@ -35,7 +35,7 @@ data class Sets (
     override val pageSize: Int,
     @JsonProperty("_totalCount")
     override val totalCount: Int
-) : ItemType(pageSize, totalCount)
+) : ResultCounters(pageSize, totalCount)
 
 data class SetSingle(
     val set: Set
