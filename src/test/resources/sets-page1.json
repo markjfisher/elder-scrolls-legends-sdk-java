@@ -1,0 +1,33 @@
+{
+  "sets": [
+    {
+      "name": "Core Set",
+      "releaseDate": "2016-04-01",
+      "totalCards": 454,
+      "id": "cs"
+    },
+    {
+      "name": "Madhouse Collection",
+      "releaseDate": "2016-12-14",
+      "totalCards": 10,
+      "id": "mc"
+    },
+    {
+      "name": "Monthly Rewards",
+      "releaseDate": "",
+      "totalCards": 26,
+      "id": "mr"
+    },
+    {
+      "name": "The Fall of the Dark Brotherhood",
+      "releaseDate": "2017-04-05",
+      "totalCards": 46,
+      "id": "fodb"
+    }
+  ],
+  "_links": {
+    "next": "http://api.elderscrollslegends.io/v1/sets?page=2&pageSize=4"
+  },
+  "_pageSize": 4,
+  "_totalCount": 9
+}

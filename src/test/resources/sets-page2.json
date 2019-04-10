@@ -1,0 +1,34 @@
+{
+  "sets": [
+    {
+      "name": "Heroes of Skyrim",
+      "releaseDate": "2017-06-29",
+      "totalCards": 169,
+      "id": "hos"
+    },
+    {
+      "name": "Return to Clockwork City",
+      "releaseDate": "2017-11-30",
+      "totalCards": 61,
+      "id": "rcc"
+    },
+    {
+      "name": "Forgotten Hero Collection",
+      "releaseDate": "2018-02-01",
+      "totalCards": 12,
+      "id": "fhc"
+    },
+    {
+      "name": "Houses of Morrowind",
+      "releaseDate": "2018-04-06",
+      "totalCards": 151,
+      "id": "hom"
+    }
+  ],
+  "_links": {
+    "next": "http://api.elderscrollslegends.io/v1/sets?page=3&pageSize=4",
+    "prev": "http://api.elderscrollslegends.io/v1/sets?pageSize=4"
+  },
+  "_pageSize": 4,
+  "_totalCount": 9
+}

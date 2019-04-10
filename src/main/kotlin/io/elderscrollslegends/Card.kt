@@ -23,17 +23,18 @@ data class Card(
 ) {
     companion object {
         private val queryBuilder = QueryBuilder()
+        private const val RESOURCE_NAME = "cards"
 
         fun all(): List<Card> {
             return where(emptyMap())
         }
 
         fun find(id: String): Card? {
-            return queryBuilder.find(resource = "cards", id = id, cls = CardSingle::class.java)?.card
+            return queryBuilder.find(resource = RESOURCE_NAME, id = id, cls = CardSingle::class.java)?.card
         }
 
         fun where(predicates: Map<String, String>): List<Card> {
-            return queryBuilder.where(resource = "cards", cls = Cards::class.java, predicates = predicates) { cards, cardList ->
+            return queryBuilder.where(resource = RESOURCE_NAME, cls = Cards::class.java, predicates = predicates) { cards, cardList ->
                 cardList.addAll(cards?.cards ?: emptyList())
             }
         }

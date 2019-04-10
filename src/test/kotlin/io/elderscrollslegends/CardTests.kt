@@ -8,7 +8,7 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import java.util.function.Function
 
-class AllTests {
+class CardTests {
     private val client = mockk<Client>()
     private val response = mockk<HttpResponse<JsonNode>>()
     init {
@@ -25,11 +25,11 @@ class AllTests {
         every { response.body } returns JsonNode(card)
 
         // when
-        val x = Card.find(cardId)
+        val result = Card.find(cardId)
 
         // then
-        assertThat(x).isNotNull
-        assertThat(x!!).satisfies {
+        assertThat(result).isNotNull
+        assertThat(result!!).satisfies {
             assertThat(it.name).isEqualTo("Allena Benoch")
             assertThat(it.rarity).isEqualTo("Legendary")
             assertThat(it.type).isEqualTo("Creature")
@@ -64,12 +64,12 @@ class AllTests {
 
         // when
         // val x = unirestClient.get("cards", Cards::class.java)
-        val x = Card.all()
+        val allCards = Card.all()
 
         // then
-        assertThat(x.size).isEqualTo(6)
+        assertThat(allCards.size).isEqualTo(6)
 
-        assertThat(x.first()).satisfies {
+        assertThat(allCards.first()).satisfies {
             assertThat(it.name).isEqualTo("Blood Dragon")
             assertThat(it.rarity).isEqualTo("Legendary")
             assertThat(it.type).isEqualTo("Creature")
@@ -91,11 +91,11 @@ class AllTests {
             assertThat(it.id).isEqualTo("7f62d718099821fc9945af326ef29f406f039f71")
         }
 
-        assertThat(x[1].name).isEqualTo("Burn and Pillage")
-        assertThat(x[2].name).isEqualTo("Camoran Scout Leader")
-        assertThat(x[3].name).isEqualTo("Cliff Racer")
-        assertThat(x[4].name).isEqualTo("Wabbajack")
-        assertThat(x[5].name).isEqualTo("Allena Benoch")
+        assertThat(allCards[1].name).isEqualTo("Burn and Pillage")
+        assertThat(allCards[2].name).isEqualTo("Camoran Scout Leader")
+        assertThat(allCards[3].name).isEqualTo("Cliff Racer")
+        assertThat(allCards[4].name).isEqualTo("Wabbajack")
+        assertThat(allCards[5].name).isEqualTo("Allena Benoch")
 
     }
 

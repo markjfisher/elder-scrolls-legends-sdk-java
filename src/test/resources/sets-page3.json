@@ -1,0 +1,15 @@
+{
+  "sets": [
+    {
+      "name": "FrostSpark Collection",
+      "releaseDate": "2018-10-19",
+      "totalCards": 11,
+      "id": "fsc"
+    }
+  ],
+  "_links": {
+    "prev": "http://api.elderscrollslegends.io/v1/sets?page=2&pageSize=4"
+  },
+  "_pageSize": 4,
+  "_totalCount": 9
+}
