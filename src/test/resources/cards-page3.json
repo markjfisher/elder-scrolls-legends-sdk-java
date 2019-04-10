@@ -1,0 +1,60 @@
+{
+  "cards": [
+    {
+      "name": "Wabbajack",
+      "rarity": "Legendary",
+      "type": "Support",
+      "cost": 5,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": true,
+      "soulSummon": 1200,
+      "soulTrap": 400,
+      "text": "Uses: 3. Activate: Transform a creature into a random creature.",
+      "attributes": [
+        "Neutral"
+      ],
+      "unique": true,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/wabbajack.png",
+      "id": "7b42596f980d3cb5bda27f8b6de58f91d10c7f0b"
+    },
+    {
+      "name": "Allena Benoch",
+      "rarity": "Legendary",
+      "type": "Creature",
+      "subtypes": [
+        "Wood Elf"
+      ],
+      "cost": 6,
+      "power": 1,
+      "health": 1,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": true,
+      "soulSummon": 1200,
+      "soulTrap": 400,
+      "text": "Lethal. Summon: Deal 1 damage.",
+      "attributes": [
+        "Strength",
+        "Agility"
+      ],
+      "keywords": [
+        "Lethal"
+      ],
+      "unique": true,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/allena_benoch.png",
+      "id": "06a4d55a15a48361f1d5d7c2fe50563f1fa82408"
+    }
+  ],
+  "_links": {
+    "next": "https://api.elderscrollslegends.io/v1/cards?page=2&pageSize=2&unique=true"
+  },
+  "_pageSize": 2,
+  "_totalCount": 6
+}

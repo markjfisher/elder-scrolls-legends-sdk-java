@@ -1,0 +1,60 @@
+{
+  "sets": [
+    {
+      "name": "Core Set",
+      "releaseDate": "2016-04-01",
+      "totalCards": 454,
+      "id": "cs"
+    },
+    {
+      "name": "Madhouse Collection",
+      "releaseDate": "2016-12-14",
+      "totalCards": 10,
+      "id": "mc"
+    },
+    {
+      "name": "Monthly Rewards",
+      "releaseDate": "",
+      "totalCards": 26,
+      "id": "mr"
+    },
+    {
+      "name": "The Fall of the Dark Brotherhood",
+      "releaseDate": "2017-04-05",
+      "totalCards": 46,
+      "id": "fodb"
+    },
+    {
+      "name": "Heroes of Skyrim",
+      "releaseDate": "2017-06-29",
+      "totalCards": 169,
+      "id": "hos"
+    },
+    {
+      "name": "Return to Clockwork City",
+      "releaseDate": "2017-11-30",
+      "totalCards": 61,
+      "id": "rcc"
+    },
+    {
+      "name": "Forgotten Hero Collection",
+      "releaseDate": "2018-02-01",
+      "totalCards": 12,
+      "id": "fhc"
+    },
+    {
+      "name": "Houses of Morrowind",
+      "releaseDate": "2018-04-06",
+      "totalCards": 151,
+      "id": "hom"
+    },
+    {
+      "name": "FrostSpark Collection",
+      "releaseDate": "2018-10-19",
+      "totalCards": 11,
+      "id": "fsc"
+    }
+  ],
+  "_pageSize": 100,
+  "_totalCount": 9
+}

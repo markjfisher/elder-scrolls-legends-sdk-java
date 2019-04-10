@@ -1,0 +1,59 @@
+{
+  "cards": [
+    {
+      "name": "Blood Dragon",
+      "rarity": "Legendary",
+      "type": "Creature",
+      "subtypes": [
+        "Dragon"
+      ],
+      "cost": 5,
+      "power": 5,
+      "health": 7,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": true,
+      "soulSummon": 1200,
+      "soulTrap": 400,
+      "text": "Blood Dragon ignores Guards and can attack creatures in any lane.",
+      "attributes": [
+        "Strength"
+      ],
+      "keywords": [
+        "Guard"
+      ],
+      "unique": false,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/blood_dragon.png",
+      "id": "7f62d718099821fc9945af326ef29f406f039f71"
+    },
+    {
+      "name": "Burn and Pillage",
+      "rarity": "Epic",
+      "type": "Action",
+      "cost": 5,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": true,
+      "soulSummon": 400,
+      "soulTrap": 100,
+      "text": "Deal 1 damage to all enemy creatures in a lane for each destroyed enemy rune.",
+      "attributes": [
+        "Strength"
+      ],
+      "unique": false,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/burn_and_pillage.png",
+      "id": "54798ac9d0703e215316a302b98f5a35e349d553"
+    }
+  ],
+  "_links": {
+    "next": "https://api.elderscrollslegends.io/v1/cards?page=2&pageSize=2"
+  },
+  "_pageSize": 2,
+  "_totalCount": 6
+}

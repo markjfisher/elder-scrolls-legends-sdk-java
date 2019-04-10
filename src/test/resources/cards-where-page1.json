@@ -1,0 +1,67 @@
+{
+  "cards": [
+    {
+      "name": "Blood Dragon",
+      "rarity": "Legendary",
+      "type": "Creature",
+      "subtypes": [
+        "Dragon"
+      ],
+      "cost": 5,
+      "power": 5,
+      "health": 7,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": true,
+      "soulSummon": 1200,
+      "soulTrap": 400,
+      "text": "Blood Dragon ignores Guards and can attack creatures in any lane.",
+      "attributes": [
+        "Strength"
+      ],
+      "keywords": [
+        "Guard"
+      ],
+      "unique": false,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/blood_dragon.png",
+      "id": "7f62d718099821fc9945af326ef29f406f039f71"
+    },
+    {
+      "name": "Fortress Watchman",
+      "rarity": "Common",
+      "type": "Creature",
+      "subtypes": [
+        "Orc"
+      ],
+      "cost": 5,
+      "power": 5,
+      "health": 4,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": true,
+      "soulSummon": 50,
+      "soulTrap": 5,
+      "text": "Guard",
+      "attributes": [
+        "Strength"
+      ],
+      "keywords": [
+        "Guard"
+      ],
+      "unique": false,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/fortress_watchman.png",
+      "id": "255950c3ce0ea4013605e475497962a9e7bf6f49"
+    }
+  ],
+  "_links": {
+    "next": "https://api.elderscrollslegends.io/v1/cards?keywords=guard%7Cprophecy&page=2&pageSize=2"
+  },
+  "_pageSize": 2,
+  "_totalCount": 5
+}

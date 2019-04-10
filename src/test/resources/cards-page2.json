@@ -1,0 +1,68 @@
+{
+  "cards": [
+    {
+      "name": "Camoran Scout Leader",
+      "rarity": "Epic",
+      "type": "Creature",
+      "subtypes": [
+        "Wood Elf"
+      ],
+      "cost": 5,
+      "power": 2,
+      "health": 2,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": true,
+      "soulSummon": 400,
+      "soulTrap": 100,
+      "text": "Summon: Summon a 2/2 Wood Elf Scout with Charge in each lane with a wounded enemy creature.",
+      "attributes": [
+        "Agility"
+      ],
+      "keywords": [
+        "Charge"
+      ],
+      "unique": false,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/camoran_scout_leader.png",
+      "id": "3617a6f2914cb54376fef96fa256f2f4f8434707"
+    },
+    {
+      "name": "Cliff Racer",
+      "rarity": "Rare",
+      "type": "Creature",
+      "subtypes": [
+        "Reptile"
+      ],
+      "cost": 5,
+      "power": 4,
+      "health": 4,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": true,
+      "soulSummon": 100,
+      "soulTrap": 20,
+      "text": "Charge",
+      "attributes": [
+        "Agility"
+      ],
+      "keywords": [
+        "Charge"
+      ],
+      "unique": false,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/cliff_racer.png",
+      "id": "74e2126b539b088dce67e98d0948aa7bf55e74f8"
+    }
+  ],
+  "_links": {
+    "next": "https://api.elderscrollslegends.io/v1/cards?page=3&pageSize=2",
+    "prev": "https://api.elderscrollslegends.io/v1/cards?pageSize=2"
+  },
+  "_pageSize": 2,
+  "_totalCount": 6
+}

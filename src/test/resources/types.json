@@ -1,0 +1,10 @@
+{
+  "types": [
+    "Action",
+    "Creature",
+    "Item",
+    "Support"
+  ],
+  "_pageSize": 100,
+  "_totalCount": 4
+}

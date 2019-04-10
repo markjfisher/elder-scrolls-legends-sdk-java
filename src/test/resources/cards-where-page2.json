@@ -1,0 +1,66 @@
+{
+  "cards": [
+    {
+      "name": "Frost Atronach",
+      "rarity": "Rare",
+      "type": "Creature",
+      "subtypes": [
+        "Daedra"
+      ],
+      "cost": 5,
+      "power": 5,
+      "health": 5,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": false,
+      "text": "Breakthrough",
+      "attributes": [
+        "Intelligence"
+      ],
+      "keywords": [
+        "Guard"
+      ],
+      "unique": false,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/frost_atronach.png",
+      "id": "d7f263ab4e4697341a252102e8874b3a3239b342"
+    },
+    {
+      "name": "Grahtwood Ambusher",
+      "rarity": "Epic",
+      "type": "Creature",
+      "subtypes": [
+        "Wood Elf"
+      ],
+      "cost": 5,
+      "power": 4,
+      "health": 2,
+      "set": {
+        "id": "cs",
+        "name": "Core Set",
+        "_self": "https://api.elderscrollslegends.io/v1/sets/cs"
+      },
+      "collectible": true,
+      "soulSummon": 400,
+      "soulTrap": 100,
+      "text": "Prophecy. Summon: Deal 1 damage to all enemy creatures in this lane.",
+      "attributes": [
+        "Strength"
+      ],
+      "keywords": [
+        "Prophecy"
+      ],
+      "unique": false,
+      "imageUrl": "https://images.elderscrollslegends.io/cs/grahtwood_ambusher.png",
+      "id": "d248a6dc80574f38cb9e0234e1984c771c8b6ccd"
+    }
+  ],
+  "_links": {
+    "next": "https://api.elderscrollslegends.io/v1/cards?keywords=guard%7Cprophecy&page=3&pageSize=2",
+    "prev": "https://api.elderscrollslegends.io/v1/cards?keywords=guard%7Cprophecy&pageSize=2"
+  },
+  "_pageSize": 2,
+  "_totalCount": 5
+}

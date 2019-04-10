@@ -1,0 +1,12 @@
+{
+  "attributes": [
+    "Agility",
+    "Endurance",
+    "Intelligence",
+    "Neutral",
+    "Strength",
+    "Willpower"
+  ],
+  "_pageSize": 100,
+  "_totalCount": 6
+}
