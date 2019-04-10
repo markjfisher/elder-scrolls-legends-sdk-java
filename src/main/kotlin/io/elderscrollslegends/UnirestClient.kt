@@ -36,9 +36,6 @@ open class UnirestClient(client: Client = Unirest.config().client) {
         return get("$resource/$id", cls, queryParams)
     }
 
-    fun <T> all(resource: String, cls: Class<T>, queryParams: Map<String, String> = emptyMap()): List<T> {
-        return emptyList()
-    }
 }
 
 object UnirestInitializer {
