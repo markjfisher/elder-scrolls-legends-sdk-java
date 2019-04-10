@@ -11,7 +11,9 @@ import java.util.function.Function
 class AllTests {
     private val client = mockk<Client>()
     private val response = mockk<HttpResponse<JsonNode>>()
-    private val unirestClient = UnirestClient(client)
+    init {
+        UnirestClient(client)
+    }
 
     @Test
     fun `find Card by id`() {
@@ -98,7 +100,7 @@ class AllTests {
     }
 
     @Test
-    fun `where clause invokes correct calls over multiple pages`() {
+    fun `where clause invokes correct calls over multiple pages when no page is specified`() {
         val cards1 = String(this::class.java.getResource("/cards-where-page1.json").readBytes())
         val cards2 = String(this::class.java.getResource("/cards-where-page2.json").readBytes())
         val cards3 = String(this::class.java.getResource("/cards-where-page3.json").readBytes())
@@ -115,12 +117,34 @@ class AllTests {
         // when
         Card.where(mapOf("keywords" to "guard|prophecy"))
 
-        // then - note the double percentage, as the argument is a template for String.format, so has to be escaped
         assertThat(requests.map { it.url }).isEqualTo(
             listOf(
                 "https://api.elderscrollslegends.io/v1/cards?keywords=guard%7Cprophecy&page=1",
                 "https://api.elderscrollslegends.io/v1/cards?keywords=guard%7Cprophecy&page=2",
                 "https://api.elderscrollslegends.io/v1/cards?keywords=guard%7Cprophecy&page=3"
+            )
+        )
+    }
+
+    @Test
+    fun `where clause invokes correct call to single page when page is specified`() {
+        val cards = String(this::class.java.getResource("/cards-page2.json").readBytes())
+
+        val capturedHttpRequest = slot<HttpRequest<*>>()
+        val requests = mutableListOf<HttpRequest<*>>()
+        every { client.request(capture(capturedHttpRequest), any<Function<RawResponse, HttpResponse<JsonNode>>>()) } answers {
+            requests.add(capturedHttpRequest.captured)
+            response
+        }
+        every { response.isSuccess } returns true
+        every { response.body } returns JsonNode(cards)
+
+        // when
+        Card.where(mapOf("keywords" to "guard|prophecy", "page" to "2"))
+
+        assertThat(requests.map { it.url }).isEqualTo(
+            listOf(
+                "https://api.elderscrollslegends.io/v1/cards?keywords=guard%7Cprophecy&page=2"
             )
         )
     }
