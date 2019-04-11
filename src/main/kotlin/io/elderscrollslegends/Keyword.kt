@@ -7,6 +7,7 @@ class Keyword {
         private val queryBuilder = QueryBuilder()
         private const val RESOURCE_NAME = "keywords"
 
+        @JvmStatic
         fun all(): List<String> {
             return where(emptyMap())
         }

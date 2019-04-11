@@ -7,41 +7,46 @@ https://elderscrollslegends.io.
 
 TODO: Upload to maven and make available as a dependency
 
+# Example usage
+
+The following illustrates using all(), where() and find().
+
+```java
+import io.elderscrollslegends.Card;
+import io.elderscrollslegends.Keyword;
+import io.elderscrollslegends.Set;
+
+import java.util.Map;
+
+public class Legends {
+	public static void main(String args[]) {
+		System.out.println(Keyword.all());
+
+		System.out.println(Card.find("3921e71a0b3a5f30032d54d402cefb37b60aa46e"));
+
+		Map<String, String> cardQuery = Map.of(
+			"attributes", "strength",
+			"keywords", "guard");
+
+		Card.where(cardQuery)
+			.forEach(System.out::println);
+
+		Set.all()
+			.stream()
+			.filter(set -> set.getTotalCards() > 100)
+			.forEach(System.out::println);
+	}
+}
+```
+# SDK
+
+See [SDK Usage](SdkUsage.md)
+
 # Locally Building
 
 Ensure you have Java 8+ installed (e.g. via [SdkMan](https://sdkman.io/))
 
     ./gradlew clean build
-
-# Functions available
-
-## Cards
-
-### Find by id
-
-    Card.find(id)
-    
-### Get all cards
-
-    Card.all()
-
-### Applying where clause
-
-    Card.where(mapOfPredicates)
-
-## Sets
-
-### Find by id
-
-    Set.find(id)
-    
-### Get all sets
-
-    Set.all()
-
-### Applying where clause
-
-    Set.where(mapOfPredicates)
 
 # Underlying implementation details
 

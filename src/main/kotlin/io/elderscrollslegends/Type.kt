@@ -7,6 +7,7 @@ class Type {
         private val queryBuilder = QueryBuilder()
         private const val RESOURCE_NAME = "types"
 
+        @JvmStatic
         fun all(): List<String> {
             return where(emptyMap())
         }

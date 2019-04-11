@@ -1,0 +1,8 @@
+{
+  "card": {
+    "name": "test card",
+    "soulSummon": "This card belongs to the Madhouse Collection and cannot be Soul Summoned.",
+    "soulTrap": "This card belongs to the Madhouse Collection and cannot be Soul Trapped.",
+    "id": "test-id"
+  }
+}

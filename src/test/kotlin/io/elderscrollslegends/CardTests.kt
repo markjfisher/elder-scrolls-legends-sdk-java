@@ -41,8 +41,8 @@ class CardTests {
             assertThat(it.set.name).isEqualTo("Core Set")
             assertThat(it.set.self).isEqualTo("https://api.elderscrollslegends.io/v1/sets/cs")
             assertThat(it.collectible).isEqualTo(true)
-            assertThat(it.soulSummon).isEqualTo(1200)
-            assertThat(it.soulTrap).isEqualTo(400)
+            assertThat(it.soulSummon).isEqualTo("1200")
+            assertThat(it.soulTrap).isEqualTo("400")
             assertThat(it.text).isEqualTo("Lethal. Summon: Deal 1 damage.")
             assertThat(it.attributes).isEqualTo(listOf("Strength", "Agility"))
             assertThat(it.keywords).isEqualTo(listOf("Lethal"))
@@ -81,8 +81,8 @@ class CardTests {
             assertThat(it.set.name).isEqualTo("Core Set")
             assertThat(it.set.self).isEqualTo("https://api.elderscrollslegends.io/v1/sets/cs")
             assertThat(it.collectible).isEqualTo(true)
-            assertThat(it.soulSummon).isEqualTo(1200)
-            assertThat(it.soulTrap).isEqualTo(400)
+            assertThat(it.soulSummon).isEqualTo("1200")
+            assertThat(it.soulTrap).isEqualTo("400")
             assertThat(it.text).isEqualTo("Blood Dragon ignores Guards and can attack creatures in any lane.")
             assertThat(it.attributes).isEqualTo(listOf("Strength"))
             assertThat(it.keywords).isEqualTo(listOf("Guard"))
@@ -147,5 +147,55 @@ class CardTests {
                 "https://api.elderscrollslegends.io/v1/cards?keywords=guard%7Cprophecy&page=2"
             )
         )
+    }
+
+    @Test
+    fun `can create card with missing fields`() {
+        val cardData = String(this::class.java.getResource("/card-missing-fields.json").readBytes())
+
+        val capturedHttpRequest = slot<HttpRequest<*>>()
+        val requests = mutableListOf<HttpRequest<*>>()
+        every { client.request(capture(capturedHttpRequest), any<Function<RawResponse, HttpResponse<JsonNode>>>()) } answers {
+            requests.add(capturedHttpRequest.captured)
+            response
+        }
+        every { response.isSuccess } returns true
+        every { response.body } returns JsonNode(cardData)
+
+        // when
+        val card = Card.find("fake-id")!!
+
+        assertThat(requests.map { it.url }).isEqualTo(
+            listOf(
+                "https://api.elderscrollslegends.io/v1/cards/fake-id"
+            )
+        )
+
+        assertThat(card).satisfies {
+            assertThat(it.id).isEqualTo("fake-id")
+            assertThat(it.name).isEqualTo("Fake Card")
+        }
+    }
+
+    @Test
+    fun `can create card with non integer soul values`() {
+        val cardData = String(this::class.java.getResource("/card-non-int-summon-costs.json").readBytes())
+
+        val capturedHttpRequest = slot<HttpRequest<*>>()
+        val requests = mutableListOf<HttpRequest<*>>()
+        every { client.request(capture(capturedHttpRequest), any<Function<RawResponse, HttpResponse<JsonNode>>>()) } answers {
+            requests.add(capturedHttpRequest.captured)
+            response
+        }
+        every { response.isSuccess } returns true
+        every { response.body } returns JsonNode(cardData)
+
+        // when
+        val card = Card.find("test-id")!!
+
+        assertThat(card).satisfies {
+            assertThat(it.id).isEqualTo("test-id")
+            assertThat(it.name).isEqualTo("test card")
+        }
     }
 }

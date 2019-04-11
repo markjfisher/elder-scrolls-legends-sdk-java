@@ -113,4 +113,29 @@ class SetTests {
             )
         )
     }
+
+    @Test
+    fun `can create set with missing fields`() {
+        val setData = String(this::class.java.getResource("/set-missing-data.json").readBytes())
+
+        val capturedHttpRequest = slot<HttpRequest<*>>()
+        val requests = mutableListOf<HttpRequest<*>>()
+        every { client.request(capture(capturedHttpRequest), any<Function<RawResponse, HttpResponse<JsonNode>>>()) } answers {
+            requests.add(capturedHttpRequest.captured)
+            response
+        }
+        every { response.isSuccess } returns true
+        every { response.body } returns JsonNode(setData)
+
+        // when
+        val set = Set.find("fake-set-id")!!
+
+        assertThat(set).satisfies {
+            assertThat(it.id).isEqualTo("fake-set-id")
+            assertThat(it.name).isEqualTo("")
+            assertThat(it.totalCards).isEqualTo(0)
+            assertThat(it.releaseDate).isEqualTo("")
+        }
+    }
+
 }

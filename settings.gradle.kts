@@ -1,1 +1,1 @@
-rootProject.name = "legends-java"
+rootProject.name = "elderscrolls-legends-java"

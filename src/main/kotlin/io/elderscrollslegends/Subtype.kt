@@ -5,8 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty
 class Subtype {
     companion object {
         private val queryBuilder = QueryBuilder()
-        private const val RESOURCE_NAME = "types"
+        private const val RESOURCE_NAME = "subtypes"
 
+        @JvmStatic
         fun all(): List<String> {
             return where(emptyMap())
         }

@@ -4,35 +4,38 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 data class Card(
     val name: String,
-    val rarity: String,
-    val type: String,
+    val rarity: String = "",
+    val type: String = "",
     val subtypes: List<String> = emptyList(),
-    val cost: Int,
-    val power: Int,
-    val health: Int,
-    val set: CardSet,
-    val collectible: Boolean,
-    val soulSummon: Int,
-    val soulTrap: Int,
-    val text: String,
+    val cost: Int = -1,
+    val power: Int = -1,
+    val health: Int = -1,
+    val set: CardSet = CardSet(),
+    val collectible: Boolean = false,
+    val soulSummon: String = "",
+    val soulTrap: String = "",
+    val text: String = "",
     val attributes: List<String> = emptyList(),
     val keywords: List<String> = emptyList(),
-    val unique: Boolean,
-    val imageUrl: String,
-    val id: String
+    val unique: Boolean = true,
+    val imageUrl: String = "",
+    val id: String = ""
 ) {
     companion object {
         private val queryBuilder = QueryBuilder()
         private const val RESOURCE_NAME = "cards"
 
+        @JvmStatic
         fun all(): List<Card> {
             return where(emptyMap())
         }
 
+        @JvmStatic
         fun find(id: String): Card? {
             return queryBuilder.find(resource = RESOURCE_NAME, id = id, cls = CardSingle::class.java)?.card
         }
 
+        @JvmStatic
         fun where(predicates: Map<String, String>): List<Card> {
             return queryBuilder.where(resource = RESOURCE_NAME, cls = Cards::class.java, predicates = predicates) { cards, cardList ->
                 cardList.addAll(cards?.cards ?: emptyList())
@@ -55,8 +58,8 @@ data class CardSingle(
 )
 
 data class CardSet(
-    val name: String,
-    val id: String,
+    val name: String = "",
+    val id: String = "",
     @JsonProperty("_self")
-    val self: String
+    val self: String = ""
 )
