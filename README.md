@@ -5,7 +5,33 @@ https://elderscrollslegends.io.
 
 # Including in your project
 
-TODO: Upload to maven and make available as a dependency
+#### Gradle/maven dependency
+
+<table>
+<thead><tr><th>Approach</th><th>Instruction</th></tr></thead>
+<tr>
+<td><img src="doc/gradle.png" alt="Gradle"/></td>
+<td>
+    <pre>implementation "net.markjfisher:elderscrolls-legends-java:{version}"</pre>
+    </td>
+</tr>
+<tr>
+<td><img src="doc/gradle.png" alt="Gradle"/> (Kotlin DSL)</td>
+<td>
+    <pre>implementation("net.markjfisher:elderscrolls-legends-java:{version}")</pre>
+    </td>
+</tr>
+<tr>
+<td><img src="doc/maven.png" alt="Maven"/></td>
+<td>
+<pre>&lt;dependency&gt;
+    &lt;groupId&gt;net.markjfisher&lt;/groupId&gt;
+    &lt;artifactId&gt;elderscrolls-legends-java&lt;/artifactId&gt;
+    &lt;version&gt;{version}&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+    </td>
+</tr>
+</table>
 
 # Example usage
 
