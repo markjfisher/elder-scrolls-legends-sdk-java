@@ -2,9 +2,9 @@ package io.elderscrollslegends
 
 class CardCodeGenerator {
     fun generateCardCodeCombinations(): List<String> {
-        val upperLetters = CharArray(26) { (it + 65).toChar() }
         val lowerLetters = CharArray(26) { (it + 97).toChar() }
-        val allLetters = upperLetters + lowerLetters
+        val upperLetters = CharArray(26) { (it + 65).toChar() }
+        val allLetters = lowerLetters + upperLetters
         return combine(allLetters.toList(), allLetters.toList()) {a, b -> "$a$b"}
     }
 

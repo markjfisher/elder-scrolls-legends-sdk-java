@@ -10,13 +10,10 @@ class CodeMapper {
             val cards = Card.all()
             val decoder = Decoder()
             val m = CardCodeGenerator().generateCardCodeCombinations()
-                //.filter { it.matches("c[AB]".toRegex()) }
-//                .take(5)
                 .map { code ->
                     print(code)
                     val name = decoder.getNameFromCode(code)
-//                    Thread.sleep(100)
-                    if (code.endsWith("z")) println("")
+                    if (code.endsWith("Z")) println("")
                     val card = cards.filter { it.name == name }
                     val id = if (card.isNotEmpty()) card.first().id else "UNKNOWN"
                     val jo = JSONObject()
