@@ -65,8 +65,10 @@ Then request that data, and pull out the `<span class='name'>Card Name</span>` s
          -H 'accept-language: en-GB,en;q=0.9,en-US;q=0.8,fr;q=0.7' \
          -H 'x-requested-with: XMLHttpRequest' \
          -H 'cookie: PHPSESSID=a35b1c1abb02bebd3bf61c06a8e852d3; _ga=GA1.2.1397344180.1555230769; _gid=GA1.2.45595269.1555230769; cookieconsent_status=dismiss' \
-         -H 'pragma: no-cache' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' \
-         -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' -H 'accept: application/json, text/javascript, */*; q=0.01' \
+         -H 'pragma: no-cache' \
+         -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' \
+         -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+         -H 'accept: application/json, text/javascript, */*; q=0.01' \
          -H 'cache-control: no-cache' \
          -H 'authority: www.legends-decks.com' \
          -H 'referer: https://www.legends-decks.com/deck-builder' \

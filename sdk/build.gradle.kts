@@ -8,7 +8,8 @@ plugins {
 }
 
 group = "net.markjfisher"
-version = "1.0.0"
+version = "1.0.1"
+val legendsArchiveBaseName = "elderscrolls-legends-sdk-java"
 
 val junitJupiterEngineVersion: String by project
 val jacksonVersion: String by project
@@ -19,8 +20,6 @@ val konfigVersion: String by project
 
 val sonatypeUsername: String by project
 val sonatypePassword: String by project
-
-val legendsArchiveBaseName = "elderscrolls-legends-sdk-java"
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -146,11 +145,3 @@ signing {
 defaultTasks(
     "clean", "build"
 )
-
-allprojects {
-    repositories {
-        mavenCentral()
-        jcenter()
-        maven(url = "https://plugins.gradle.org/m2/")
-    }
-}

@@ -12,7 +12,7 @@ class TypeTests {
     private val response = mockk<HttpResponse<JsonNode>>()
 
     init {
-        UnirestClient(client)
+        UnirestClient(client = client)
     }
 
     @Test

@@ -1,7 +1,8 @@
 rootProject.name = "legends"
 
 include(
-    "sdk"
+    "sdk",
+    "decoder"
 )
 
 // project(":sdk").name = "elderscrolls-legends-sdk-java"

@@ -10,13 +10,7 @@ import kong.unirest.ObjectMapper
 import kong.unirest.Unirest
 import java.io.IOException
 
-open class UnirestClient(client: Client = Unirest.config().client) {
-    private val uri = Key("legends.uri", stringType)
-    private val version = Key("legends.version", stringType)
-
-    private val config = systemProperties() overriding
-            EnvironmentVariables() overriding
-            ConfigurationProperties.fromResource("defaults.properties")
+open class UnirestClient(val uriPath: String = "", client: Client = Unirest.config().client) {
 
     init {
         Unirest.config().httpClient(client)
@@ -24,8 +18,19 @@ open class UnirestClient(client: Client = Unirest.config().client) {
     }
 
     fun <T> get(resource: String, cls: Class<T>, queryParams: Map<String, String> = emptyMap()): T? {
-        val url = "${config[uri]}/${config[version]}/$resource"
+        val url = if (resource.isNullOrBlank()) uriPath else "$uriPath/$resource"
         val data = Unirest.get(url)
+            .queryString(queryParams)
+            .asJson()
+
+        return if (data.isSuccess) UnirestInitializer.objectMapper.readValue(data.body.toString(), cls) else null
+    }
+
+    fun <T> post(resource: String = "", cls: Class<T>, queryParams: Map<String, String> = emptyMap(), fields: Map<String, Any> = emptyMap(), headers: Map<String, String> = emptyMap()): T? {
+        val url = if (resource.isNullOrBlank()) uriPath else "$uriPath/$resource"
+        val data = Unirest.post(url)
+            .fields(fields)
+            .headers(headers)
             .queryString(queryParams)
             .asJson()
 

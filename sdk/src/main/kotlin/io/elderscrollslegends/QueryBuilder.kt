@@ -1,7 +1,16 @@
 package io.elderscrollslegends
 
+import com.natpryce.konfig.*
+
 class QueryBuilder {
-    private val unirestClient = UnirestClient()
+    private val uri = Key("legends.uri", stringType)
+    private val version = Key("legends.version", stringType)
+
+    private val config = ConfigurationProperties.systemProperties() overriding
+            EnvironmentVariables() overriding
+            ConfigurationProperties.fromResource("defaults.properties")
+
+    private val unirestClient = UnirestClient(uriPath = "${config[uri]}/${config[version]}")
 
     fun <T> find(resource: String, id: String, cls: Class<T>, queryParams: Map<String, String> = emptyMap()): T? {
         return unirestClient.find(resource, id, cls, queryParams)

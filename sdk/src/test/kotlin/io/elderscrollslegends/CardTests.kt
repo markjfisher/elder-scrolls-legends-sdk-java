@@ -12,7 +12,7 @@ class CardTests {
     private val client = mockk<Client>()
     private val response = mockk<HttpResponse<JsonNode>>()
     init {
-        UnirestClient(client)
+        UnirestClient(client = client)
     }
 
     @Test

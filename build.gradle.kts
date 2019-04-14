@@ -6,5 +6,14 @@ tasks {
 }
 
 defaultTasks(
-    ":sdk:clean", ":sdk:build"
+    ":sdk:clean", ":sdk:build",
+    ":decoder:clean", ":decoder:build"
 )
+
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven(url = "https://plugins.gradle.org/m2/")
+    }
+}
