@@ -72,7 +72,7 @@ See [SDK Usage](SdkUsage.md)
 
 Ensure you have Java 8+ installed (e.g. via [SdkMan](https://sdkman.io/))
 
-    ./gradlew clean build
+    ./gradlew
 
 # Underlying implementation details
 
