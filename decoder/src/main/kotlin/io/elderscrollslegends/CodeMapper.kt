@@ -26,7 +26,7 @@ class CodeMapper {
                     jo
                 }
                 .filter { jo ->
-                    jo.get("id") != "UNKNOWN"
+                    jo.get("name") != ""
                 }
             println("")
 
