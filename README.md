@@ -12,13 +12,13 @@ https://elderscrollslegends.io.
 <tr>
 <td><img src="doc/gradle.png" alt="Gradle"/></td>
 <td>
-    <pre>implementation "net.markjfisher:elderscrolls-legends-java:{version}"</pre>
+    <pre>implementation "net.markjfisher:elderscrolls-legends-sdk-java:{version}"</pre>
     </td>
 </tr>
 <tr>
 <td><img src="doc/gradle.png" alt="Gradle"/> (Kotlin DSL)</td>
 <td>
-    <pre>implementation("net.markjfisher:elderscrolls-legends-java:{version}")</pre>
+    <pre>implementation("net.markjfisher:elderscrolls-legends-sdk-java:{version}")</pre>
     </td>
 </tr>
 <tr>
@@ -26,7 +26,7 @@ https://elderscrollslegends.io.
 <td>
 <pre>&lt;dependency&gt;
     &lt;groupId&gt;net.markjfisher&lt;/groupId&gt;
-    &lt;artifactId&gt;elderscrolls-legends-java&lt;/artifactId&gt;
+    &lt;artifactId&gt;elderscrolls-legends-sdk-java&lt;/artifactId&gt;
     &lt;version&gt;{version}&lt;/version&gt;
 &lt;/dependency&gt;</pre>
     </td>
