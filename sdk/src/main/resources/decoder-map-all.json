@@ -4658,5 +4658,525 @@
     "code": "sp",
     "name": "Murkwater Scourge",
     "id": "UNKNOWN"
+  },
+  {
+    "code": "sv",
+    "name": "Alchemy",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sw",
+    "name": "Altmer Flameslinger",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sx",
+    "name": "Ayrenn, Dominion Queen",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sy",
+    "name": "Dominion Battlereeve",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sA",
+    "name": "Baandari Opportunist",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sB",
+    "name": "Battle of Chalman Keep",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sC",
+    "name": "Imperial Lackey",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sD",
+    "name": "Bishop of the Hour",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sE",
+    "name": "Black Marsh Centurion",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sF",
+    "name": "Black Marsh Prodigy",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sG",
+    "name": "Cauterize",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sH",
+    "name": "Channeled Storm",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sI",
+    "name": "Clivia Tharn",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sJ",
+    "name": "Bewildering Speed",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sK",
+    "name": "Ebonthread Cloak",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sL",
+    "name": "Covenant Mail",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sM",
+    "name": "Covenant Masterpiece",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sN",
+    "name": "Covenant Oathman",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sO",
+    "name": "Craven Conscript",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sP",
+    "name": "Wish",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sQ",
+    "name": "Empire Oathman",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sR",
+    "name": "Daedric Titan",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sS",
+    "name": "Dark Anchor",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sT",
+    "name": "Luminous Shards",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sU",
+    "name": "Dominion Oathman",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sV",
+    "name": "Dragonguard Outcast",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sW",
+    "name": "Dunmer Tyro",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sX",
+    "name": "Forerunner of the Pact",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sY",
+    "name": "Strategist's Map",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "sZ",
+    "name": "Emeric, Covenant King",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ta",
+    "name": "Back-Alley Footpad",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tb",
+    "name": "Ayrenn's Chosen",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tc",
+    "name": "Enlistment Officer",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "td",
+    "name": "Unrelenting Siege",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "te",
+    "name": "Guildsworn Bloodluster",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tf",
+    "name": "Fighters Guild Elite",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tg",
+    "name": "Forked Bolt",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "th",
+    "name": "Forward Camp",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ti",
+    "name": "Guildsworn Apprentice",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tj",
+    "name": "Guildsworn Cavalier",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tk",
+    "name": "Guildsworn Wayfarer",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tl",
+    "name": "Guildsworn Oathman",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tm",
+    "name": "Guildsworn Revitalizer",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tn",
+    "name": "Fighters Guild Berserker",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "to",
+    "name": "High Rock Stalwart",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tp",
+    "name": "Steel-Eyed Visionary",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tq",
+    "name": "Hush",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tr",
+    "name": "Empire Dreadmage",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ts",
+    "name": "Empire Recruiter",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tt",
+    "name": "Bruma Oppressor",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tu",
+    "name": "Inspiring Soldier",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tv",
+    "name": "Assassin Beetle",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tw",
+    "name": "Jorunn the Skald-King",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tx",
+    "name": "Jorunn's Vanguard",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ty",
+    "name": "Mystic of Ancient Rites",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tz",
+    "name": "Emeric's Warlord",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tA",
+    "name": "Legion Zero Templar",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tB",
+    "name": "Lyris Titanborn",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tC",
+    "name": "Nereid Sister",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tD",
+    "name": "Mannimarco",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tE",
+    "name": "Covenant Plate",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tF",
+    "name": "Lion Guard Armaments",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tG",
+    "name": "Mournhold Taskmaster",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tH",
+    "name": "Cruel Axe",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tI",
+    "name": "Ornamented Sword",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tK",
+    "name": "Orsinium Forge",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tL",
+    "name": "Outflank",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tM",
+    "name": "Pact Oathman",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tN",
+    "name": "Shadowscale Hunter",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tO",
+    "name": "Pact Shieldbearer",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tP",
+    "name": "Soul Shred",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tQ",
+    "name": "Poisoned Dagger",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tR",
+    "name": "Guildsworn Incendiary",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "tS",
+    "name": "Ravaging Elixir",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ud",
+    "name": "Renowned Instructor",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ue",
+    "name": "Sound the Alarm",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uf",
+    "name": "Sai Sahan",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ug",
+    "name": "Salvage",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uh",
+    "name": "Soul Wraith",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ui",
+    "name": "Soulburst",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uj",
+    "name": "Sparksmith",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uk",
+    "name": "Spiny Haj Mota",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ul",
+    "name": "Daggerfall Phantom",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "um",
+    "name": "Spoils of War",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "un",
+    "name": "Great Moot Squire",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uo",
+    "name": "Staff of Ice",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "up",
+    "name": "Guildsworn Honeytongue",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uq",
+    "name": "Strategic Deployment",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ur",
+    "name": "Supply Runner",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "us",
+    "name": "Telekinesis",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ut",
+    "name": "The Ruby Throne",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uu",
+    "name": "Transitus Shrine",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uv",
+    "name": "Valenwood Sentry",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uw",
+    "name": "Vanus Galerion",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "ux",
+    "name": "Varen Aquilarios",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uy",
+    "name": "Invoker of the Hist",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uz",
+    "name": "Debilitate",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uA",
+    "name": "Gray Viper Brigand",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uB",
+    "name": "Windhelm Gatekeeper",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uC",
+    "name": "Xivkyn Banelord",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uD",
+    "name": "Master of Incunabula",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uE",
+    "name": "Mages Guild Conjurer",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uF",
+    "name": "Vanus's Scribe",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "uG",
+    "name": "Abnur Tharn",
+    "id": "UNKNOWN"
   }
 ]
