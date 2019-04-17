@@ -72,6 +72,7 @@ class DeckTests {
 
     @Test
     fun `importing code returns a deck with correct cards`() {
+        // Given
         val response = mockk<HttpResponse<JsonNode>>()
         val card1s = "{'card': {'name': 'card1', 'id': 'c1' }}"
         val card2s = "{'card': {'name': 'card2', 'id': 'c2' }}"
@@ -79,14 +80,50 @@ class DeckTests {
         val card4s = "{'card': {'name': 'card4', 'id': 'c4' }}"
         every { client.request(any(), any<Function<RawResponse, HttpResponse<JsonNode>>>()) } returns response
         every { response.isSuccess } returns true
+        // We respond with 4 cards for the 4 import codes "aa", "bb", "cc", "cc"
         every { response.body } returnsMany listOf(JsonNode(card1s), JsonNode(card2s), JsonNode(card3s), JsonNode(card4s))
 
-        val deck2 = Deck.importCode("SPABaaABdcACbhdd")
+        // When
+        val deck2 = Deck.importCode("SPABaaABbbACccdd")
 
+        // Then
         assertThat(deck2.byId("c1")).isEqualTo(DeckCard(card = card1, count = 1))
         assertThat(deck2.byId("c2")).isEqualTo(DeckCard(card = card2, count = 2))
         assertThat(deck2.byId("c3")).isEqualTo(DeckCard(card = card3, count = 3))
         assertThat(deck2.byId("c4")).isEqualTo(DeckCard(card = card4, count = 3))
         assertThat(deck2.byId("xx")).isEqualTo(DeckCard())
+    }
+
+    @Test
+    fun `checking valid code strings`() {
+        // Not right format
+        assertThat(Deck.isCodeValid("NOTSP")).isFalse()
+        assertThat(Deck.isCodeValid("SP34567")).isFalse()
+
+        // Not enough cards for given marker lengths
+        assertThat(Deck.isCodeValid("SPABABAB")).isFalse()
+        assertThat(Deck.isCodeValid("SPAAABAB")).isFalse()
+        assertThat(Deck.isCodeValid("SPAAAAAB")).isFalse()
+        assertThat(Deck.isCodeValid("SPACxxAAAA")).isFalse()
+        assertThat(Deck.isCodeValid("SPAAACxxAA")).isFalse()
+        assertThat(Deck.isCodeValid("SPAAAAACxx")).isFalse()
+
+        // Valid codes
+        assertThat(Deck.isCodeValid("SPAAAAAA")).isTrue()
+        assertThat(Deck.isCodeValid("SPABxxAAAA")).isTrue()
+        assertThat(Deck.isCodeValid("SPAAABxxAA")).isTrue()
+        assertThat(Deck.isCodeValid("SPAAAAABxx")).isTrue()
+        assertThat(Deck.isCodeValid("SPACxxyyAAAA")).isTrue()
+        assertThat(Deck.isCodeValid("SPAAACxxyyAA")).isTrue()
+        assertThat(Deck.isCodeValid("SPAAAAACxxyy")).isTrue()
+
+        assertThat(Deck.isCodeValid("SPABxxAByyAA")).isTrue()
+        assertThat(Deck.isCodeValid("SPACxxyyABzzAA")).isTrue()
+        assertThat(Deck.isCodeValid("SPADaabbccACddeeABff")).isTrue()
+    }
+
+    @Test
+    fun `importing invalid code returns empty Deck`() {
+        assertThat(Deck.importCode("SPABABAB").cards.size).isEqualTo(0)
     }
 }

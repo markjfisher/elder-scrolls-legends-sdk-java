@@ -3,7 +3,7 @@ package io.elderscrollslegends
 import org.json.JSONArray
 
 class Deck(
-    cards: List<Card> = emptyList(),
+    val cards: List<Card> = emptyList(),
     val idMapper: (cardId: String) -> String = { idToCodeMap.getOrDefault(it, "__") }
 ) {
 
@@ -61,7 +61,7 @@ class Deck(
         fun importCode(code: String): Deck {
             // Minimum decodable string: SPAAAAAA, which is an empty deck.
             // Deck length must be even as everything is split into pairs of chars
-            if (code.length < 8 || (code.length % 2 != 0)) return Deck()
+            if (!isCodeValid(code)) return Deck()
             val cards = mutableListOf<Card>()
 
             val codeSeq = SeqOfString(code)
@@ -75,6 +75,27 @@ class Deck(
 
             return Deck(cards = cards)
         }
+
+        fun isCodeValid(code: String): Boolean {
+            if (!code.startsWith("SP")) return false
+            if (code.length < 8) return false
+
+            val of1MarkerIndex = 2
+            val of1Count = decodeCountMarker(code.substring(intRange(of1MarkerIndex)))
+            if (code.length < (4 + of1Count * 2 + 4)) return false
+
+            val of2MarkerIndex = 4 + of1Count * 2
+            val of2Count = decodeCountMarker(code.substring(intRange(of2MarkerIndex)))
+            if (code.length < (6 + of1Count * 2 + of2Count * 2 + 2)) return false
+
+            val of3MarkerIndex = 6 + of1Count * 2 + of2Count * 2
+            val of3Count = decodeCountMarker(code.substring(intRange(of3MarkerIndex)))
+            if (code.length != (8 + of1Count * 2 + of2Count * 2 + of3Count * 2)) return false
+
+            return true
+        }
+
+        private fun intRange(start: Int, end: Int = start + 1) = IntRange(start, end)
 
         private fun convertSeqToListOfCards(of: Int, seq: SeqOfString): List<Card> {
             val count = decodeCountMarker(seq.take(2))
