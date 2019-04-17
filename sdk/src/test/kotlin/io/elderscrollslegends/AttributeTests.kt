@@ -5,19 +5,22 @@ import io.mockk.mockk
 import io.mockk.slot
 import kong.unirest.*
 import org.assertj.core.api.Assertions.assertThat
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import java.util.function.Function
 
 class AttributeTests {
-    private val client = mockk<Client>()
-    private val response = mockk<HttpResponse<JsonNode>>()
+    private lateinit var client: Client
 
-    init {
-        UnirestClient(client = client)
+    @BeforeEach
+    fun before() {
+        client = mockk()
+        UnirestInitializer.setClient(client)
     }
 
     @Test
     fun `all() returns all attributes`() {
+        val response = mockk<HttpResponse<JsonNode>>()
         val attributes = String(this::class.java.getResource("/attributes.json").readBytes())
         every { client.request(any(), any<Function<RawResponse, HttpResponse<JsonNode>>>()) } returns response
         every { response.isSuccess } returns true
@@ -41,6 +44,7 @@ class AttributeTests {
 
     @Test
     fun `all invokes correct api calls over multiple pages when no page is specified and assembles them into single list`() {
+        val response = mockk<HttpResponse<JsonNode>>()
         val attr1 = String(this::class.java.getResource("/attributes-page1.json").readBytes())
         val attr2 = String(this::class.java.getResource("/attributes-page2.json").readBytes())
         val attr3 = String(this::class.java.getResource("/attributes-page3.json").readBytes())

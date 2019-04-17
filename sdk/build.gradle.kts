@@ -17,6 +17,10 @@ val assertJVersion: String by project
 val mockkVersion: String by project
 val unirestJavaVersion: String by project
 val konfigVersion: String by project
+val cacheVersion: String by project
+
+val kotlinLoggingVersion: String by project
+val logbackClassicVersion: String by project
 
 val sonatypeUsername: String by project
 val sonatypePassword: String by project
@@ -26,6 +30,10 @@ dependencies {
     implementation("com.konghq:unirest-java:$unirestJavaVersion")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
     implementation("com.natpryce:konfig:$konfigVersion")
+    implementation("org.apache.httpcomponents:httpclient-cache:$cacheVersion")
+
+    // implementation("io.github.microutils:kotlin-logging:$kotlinLoggingVersion")
+    // runtime("ch.qos.logback:logback-classic:$logbackClassicVersion")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterEngineVersion")
     testImplementation("org.junit.jupiter:junit-jupiter-params:$junitJupiterEngineVersion")

@@ -2,19 +2,25 @@ package io.elderscrollslegends
 
 import io.mockk.every
 import io.mockk.mockk
-import io.mockk.slot
-import kong.unirest.*
+import kong.unirest.Client
+import kong.unirest.HttpResponse
+import kong.unirest.JsonNode
+import kong.unirest.RawResponse
 import org.assertj.core.api.Assertions.assertThat
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import java.util.function.Function
 
 class KeywordTests {
-    private val client = mockk<Client>()
-    private val response = mockk<HttpResponse<JsonNode>>()
+    private lateinit var client: Client
 
-    init {
-        UnirestClient(client = client)
+    @BeforeEach
+    fun before() {
+        client = mockk()
+        UnirestInitializer.setClient(client)
     }
+
+    private val response = mockk<HttpResponse<JsonNode>>()
 
     @Test
     fun `all() returns all keywords`() {

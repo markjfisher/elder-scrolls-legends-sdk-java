@@ -7,15 +7,20 @@ import kong.unirest.HttpResponse
 import kong.unirest.JsonNode
 import kong.unirest.RawResponse
 import org.assertj.core.api.Assertions.assertThat
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import java.util.function.Function
 
 class DecoderTests {
-    private val client = mockk<Client>()
-    private val response = mockk<HttpResponse<JsonNode>>()
-    init {
-        UnirestClient(client = client)
+    private lateinit var client: Client
+
+    @BeforeEach
+    fun before() {
+        client = mockk()
+        UnirestInitializer.setClient(client)
     }
+
+    private val response = mockk<HttpResponse<JsonNode>>()
 
     @Test
     fun `should decode a string to the card name`() {
