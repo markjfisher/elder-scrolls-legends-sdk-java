@@ -40,6 +40,16 @@ if there are any duplicates. Use `deck.of(int)` to get list of cards de-duped.
 
     List<Card> cards = deck.getCards()
 
+## Collections
+
+Collections (exported from game client) are a larger type of Deck, and created in the same way as Decks.
+
+### Importing from code
+
+    Collection c = Collection.importCode("SP!!!#cCef!!")
+
+See Deck section above for getting cards out of collection, it supports the same methods.
+
 ## Sets
 
 ### Find by id

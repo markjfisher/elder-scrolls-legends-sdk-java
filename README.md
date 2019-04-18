@@ -38,12 +38,6 @@ https://elderscrollslegends.io.
 The following illustrates using all(), where() and find().
 
 ```java
-import io.elderscrollslegends.Card;
-import io.elderscrollslegends.Keyword;
-import io.elderscrollslegends.Set;
-
-import java.util.Map;
-
 public class Legends {
 	public static void main(String args[]) {
 		System.out.println(Keyword.all());
@@ -63,14 +57,21 @@ public class Legends {
 			.forEach(System.out::println);
 
 		Deck deck = Deck.importCode("SPADhlfvoFAEqEcfkvdhANdqdQeYlDmGnMlLpTitldmCpZsp");
+		printDetails(deck);
 
+		Collection c = Collection.importCode("SP!#hlfv!#qEcf!#bkiP");
+		printDetails(c);
+	}
+
+	private static void printDetails(CardGrouping c) {
 		IntStream.rangeClosed(1, 3)
 				.peek( i -> System.out.println("============== " + i + " Of ================"))
-				.mapToObj(deck::of)
+				.mapToObj(c::of)
 				.forEach(cards -> cards.forEach(card ->
 						System.out.println(String.format("%s\n       Set: %s\n    Rarity: %s\n", card.getName(), card.getSet().getName(), card.getRarity()))
 				));
 	}
+
 }
 ```
 # SDK
