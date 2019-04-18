@@ -17,6 +17,29 @@
 where paramMap is a `Map<String, String>` of queriable fields, as detailed in paramters section of
 https://docs.elderscrollslegends.io/#api_v1cards_list
 
+## Decks
+
+Decks are supported to allow importing from a code, or creating from lists of Card objects.
+
+### Importing from code
+
+    Deck deck = Deck.importCode("SPABcCAAAA")
+
+    Deck deck = new Deck(List<Card>)
+
+### Getting cards by count from deck
+
+    List<Card> cards = deck.of(1) // returns all the single cards in the deck.
+    List<Card> cards = deck.of(2) // all cards where there are 2 of them in the deck
+    List<Card> cards = deck.of(3) // all cards where there are 3 of them in the deck
+
+### Getting list of all cards in deck
+
+This returns the list of all cards in the deck, not de-duped, i.e. contains multiple of same card
+if there are any duplicates. Use `deck.of(int)` to get list of cards de-duped.
+
+    List<Card> cards = deck.getCards()
+
 ## Sets
 
 ### Find by id

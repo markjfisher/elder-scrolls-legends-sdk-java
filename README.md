@@ -61,6 +61,15 @@ public class Legends {
 			.stream()
 			.filter(set -> set.getTotalCards() > 100)
 			.forEach(System.out::println);
+
+		Deck deck = Deck.importCode("SPADhlfvoFAEqEcfkvdhANdqdQeYlDmGnMlLpTitldmCpZsp");
+
+		IntStream.rangeClosed(1, 3)
+				.peek( i -> System.out.println("============== " + i + " Of ================"))
+				.mapToObj(deck::of)
+				.forEach(cards -> cards.forEach(card ->
+						System.out.println(String.format("%s\n       Set: %s\n    Rarity: %s\n", card.getName(), card.getSet().getName(), card.getRarity()))
+				));
 	}
 }
 ```
