@@ -26,9 +26,7 @@ class DeckTests {
     private val card2 = Card(name = "card2", id = "c2")
     private val card3 = Card(name = "card3", id = "c3")
     private val card4 = Card(name = "card4", id = "c4")
-    private val deck = Deck(
-        cards = listOf(card4, card1, card3, card4, card2, card3, card1, card3, card4),
-        idMapper = { id -> mapper(id) })
+    private val deck = Deck(cards = listOf(card4, card1, card3, card4, card2, card3, card1, card3, card4))
 
     @Test
     fun `can retrieve cards from a deck by count`() {
@@ -41,7 +39,7 @@ class DeckTests {
 
     @Test
     fun `can create a code for a deck of cards`() {
-        assertThat(deck.exportCode()).isEqualTo("SPAB2cAB1cAC3c4c")
+        assertThat(deck.exportCode {mapper(it)}).isEqualTo("SPAB2cAB1cAC3c4c")
     }
 
     @Test
@@ -54,20 +52,10 @@ class DeckTests {
 
     @Test
     fun `finding cards in deck by id`() {
-        assertThat(deck.byId("c1")).isEqualTo(DeckCard(card = card1, count = 2))
-        assertThat(deck.byId("c2")).isEqualTo(DeckCard(card = card2, count = 1))
-        assertThat(deck.byId("c3")).isEqualTo(DeckCard(card = card3, count = 3))
-        assertThat(deck.byId("c4")).isEqualTo(DeckCard(card = card4, count = 3))
-    }
-
-    @Test
-    fun `convert count marker to value`() {
-        assertThat(Deck.decodeCountMarker("AA")).isEqualTo(0)
-        assertThat(Deck.decodeCountMarker("AB")).isEqualTo(1)
-        assertThat(Deck.decodeCountMarker("AZ")).isEqualTo(25)
-        assertThat(Deck.decodeCountMarker("BA")).isEqualTo(26)
-        assertThat(Deck.decodeCountMarker("BZ")).isEqualTo(51)
-        assertThat(Deck.decodeCountMarker("ZZ")).isEqualTo(25 * 26 + 25)
+        assertThat(deck.byId("c1")).isEqualTo(CardCount(card = card1, count = 2))
+        assertThat(deck.byId("c2")).isEqualTo(CardCount(card = card2, count = 1))
+        assertThat(deck.byId("c3")).isEqualTo(CardCount(card = card3, count = 3))
+        assertThat(deck.byId("c4")).isEqualTo(CardCount(card = card4, count = 3))
     }
 
     @Test
@@ -87,39 +75,11 @@ class DeckTests {
         val deck2 = Deck.importCode("SPABaaABbbACccdd")
 
         // Then
-        assertThat(deck2.byId("c1")).isEqualTo(DeckCard(card = card1, count = 1))
-        assertThat(deck2.byId("c2")).isEqualTo(DeckCard(card = card2, count = 2))
-        assertThat(deck2.byId("c3")).isEqualTo(DeckCard(card = card3, count = 3))
-        assertThat(deck2.byId("c4")).isEqualTo(DeckCard(card = card4, count = 3))
-        assertThat(deck2.byId("xx")).isEqualTo(DeckCard())
-    }
-
-    @Test
-    fun `checking valid code strings`() {
-        // Not right format
-        assertThat(Deck.isCodeValid("NOTSP")).isFalse()
-        assertThat(Deck.isCodeValid("SP34567")).isFalse()
-
-        // Not enough cards for given marker lengths
-        assertThat(Deck.isCodeValid("SPABABAB")).isFalse()
-        assertThat(Deck.isCodeValid("SPAAABAB")).isFalse()
-        assertThat(Deck.isCodeValid("SPAAAAAB")).isFalse()
-        assertThat(Deck.isCodeValid("SPACxxAAAA")).isFalse()
-        assertThat(Deck.isCodeValid("SPAAACxxAA")).isFalse()
-        assertThat(Deck.isCodeValid("SPAAAAACxx")).isFalse()
-
-        // Valid codes
-        assertThat(Deck.isCodeValid("SPAAAAAA")).isTrue()
-        assertThat(Deck.isCodeValid("SPABxxAAAA")).isTrue()
-        assertThat(Deck.isCodeValid("SPAAABxxAA")).isTrue()
-        assertThat(Deck.isCodeValid("SPAAAAABxx")).isTrue()
-        assertThat(Deck.isCodeValid("SPACxxyyAAAA")).isTrue()
-        assertThat(Deck.isCodeValid("SPAAACxxyyAA")).isTrue()
-        assertThat(Deck.isCodeValid("SPAAAAACxxyy")).isTrue()
-
-        assertThat(Deck.isCodeValid("SPABxxAByyAA")).isTrue()
-        assertThat(Deck.isCodeValid("SPACxxyyABzzAA")).isTrue()
-        assertThat(Deck.isCodeValid("SPADaabbccACddeeABff")).isTrue()
+        assertThat(deck2.byId("c1")).isEqualTo(CardCount(card = card1, count = 1))
+        assertThat(deck2.byId("c2")).isEqualTo(CardCount(card = card2, count = 2))
+        assertThat(deck2.byId("c3")).isEqualTo(CardCount(card = card3, count = 3))
+        assertThat(deck2.byId("c4")).isEqualTo(CardCount(card = card4, count = 3))
+        assertThat(deck2.byId("xx")).isEqualTo(CardCount())
     }
 
     @Test
