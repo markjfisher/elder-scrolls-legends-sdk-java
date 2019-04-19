@@ -78,7 +78,7 @@ public class Legends {
 ```
 # SDK
 
-See [SDK Usage](SdkUsage.md)
+See [SDK Usage](sdk/SdkUsage.md)
 
 # Locally Building
 
