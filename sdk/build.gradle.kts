@@ -27,10 +27,12 @@ val sonatypePassword: String by project
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("com.konghq:unirest-java:$unirestJavaVersion")
+    implementation("org.apache.httpcomponents:httpclient-cache:$cacheVersion")
+    implementation("com.konghq:unirest-java:$unirestJavaVersion") {
+        exclude(group = "org.apache.httpcomponents", module = "httpclient-cache")
+    }
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
     implementation("com.natpryce:konfig:$konfigVersion")
-    implementation("org.apache.httpcomponents:httpclient-cache:$cacheVersion")
 
     // implementation("io.github.microutils:kotlin-logging:$kotlinLoggingVersion")
     // runtime("ch.qos.logback:logback-classic:$logbackClassicVersion")

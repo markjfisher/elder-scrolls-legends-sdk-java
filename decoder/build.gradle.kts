@@ -12,11 +12,15 @@ val mockkVersion: String by project
 val unirestJavaVersion: String by project
 val konfigVersion: String by project
 val jsoupVersion: String by project
+val cacheVersion: String by project
 
 dependencies {
     implementation(project(":sdk"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("com.konghq:unirest-java:$unirestJavaVersion")
+    implementation("org.apache.httpcomponents:httpclient-cache:$cacheVersion")
+    implementation("com.konghq:unirest-java:$unirestJavaVersion") {
+        exclude(group = "org.apache.httpcomponents", module = "httpclient-cache")
+    }
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
     implementation("com.natpryce:konfig:$konfigVersion")
     implementation("org.jsoup:jsoup:$jsoupVersion")
