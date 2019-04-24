@@ -417,7 +417,7 @@
   {
     "code": "bJ",
     "name": "Bedeviling Scamp",
-    "id": "UNKNOWN"
+    "id": "375965e174220d0b4466c47873dd22b3b580eda5"
   },
   {
     "code": "bK",
@@ -492,7 +492,7 @@
   {
     "code": "bZ",
     "name": "Blessing of the Grove",
-    "id": "UNKNOWN"
+    "id": "474972f3328a691327a28f3c8b748acd9718d194"
   },
   {
     "code": "ca",
@@ -577,7 +577,7 @@
   {
     "code": "cq",
     "name": "Brellach Commander",
-    "id": "UNKNOWN"
+    "id": "16865c7cf49cd5f732db2bbb21d3436287ae806a"
   },
   {
     "code": "cr",
@@ -812,7 +812,7 @@
   {
     "code": "dl",
     "name": "Cloak/Dagger",
-    "id": "UNKNOWN"
+    "id": "22812dd862b8155a7fafd34b5cf7a8292da9bdf2"
   },
   {
     "code": "dm",
@@ -922,7 +922,7 @@
   {
     "code": "dH",
     "name": "Crazed Hunger",
-    "id": "UNKNOWN"
+    "id": "6e592a17b60db9ba656319cde8e1bdc422e38f12"
   },
   {
     "code": "dI",
@@ -932,7 +932,7 @@
   {
     "code": "dJ",
     "name": "Crucible Blacksmith",
-    "id": "UNKNOWN"
+    "id": "9569366b44e384fe79d802541f5f595893dd2c65"
   },
   {
     "code": "dK",
@@ -972,7 +972,7 @@
   {
     "code": "dS",
     "name": "Cyriel",
-    "id": "UNKNOWN"
+    "id": "ba05b1c5ed2bf5f1c03a4a85273d0106e5d6d40f"
   },
   {
     "code": "dT",
@@ -1047,7 +1047,7 @@
   {
     "code": "eh",
     "name": "Dark Seducer",
-    "id": "UNKNOWN"
+    "id": "cde250f2d9d2e0ebda04f1bf684d6355118726bd"
   },
   {
     "code": "ei",
@@ -1062,7 +1062,7 @@
   {
     "code": "ek",
     "name": "Dawnfang",
-    "id": "UNKNOWN"
+    "id": "098e4c5344e0d2ce636d935046564dd65362709b"
   },
   {
     "code": "el",
@@ -1167,7 +1167,7 @@
   {
     "code": "eF",
     "name": "Doomfang Ally",
-    "id": "UNKNOWN"
+    "id": "1bf14baee1d79491869bbe1c7ab973444d488c41"
   },
   {
     "code": "eG",
@@ -1277,12 +1277,12 @@
   {
     "code": "fb",
     "name": "Drive Mad",
-    "id": "UNKNOWN"
+    "id": "07fd9eeb1dd5dcb8e56e70d7841fe754cc36203e"
   },
   {
     "code": "fc",
     "name": "Syl, Duchess of Dementia",
-    "id": "UNKNOWN"
+    "id": "c949453472995c92edce75366e19dc38f56dde26"
   },
   {
     "code": "fd",
@@ -1292,7 +1292,7 @@
   {
     "code": "fe",
     "name": "Thadon, Duke of Mania",
-    "id": "UNKNOWN"
+    "id": "210e384c83f8927e158fdf1d09790179a9b17155"
   },
   {
     "code": "ff",
@@ -1367,7 +1367,7 @@
   {
     "code": "fu",
     "name": "Eager Torturer",
-    "id": "UNKNOWN"
+    "id": "9c4ed187ea7ee98e501885feb81eb450fc504fac"
   },
   {
     "code": "fv",
@@ -1577,7 +1577,7 @@
   {
     "code": "gk",
     "name": "Felldew/Elytra Noble",
-    "id": "UNKNOWN"
+    "id": "18465279b5c8a0d6939455fd9ef31dbd7c34b534"
   },
   {
     "code": "gl",
@@ -1667,7 +1667,7 @@
   {
     "code": "gD",
     "name": "Fork of Horripilation",
-    "id": "UNKNOWN"
+    "id": "bb9e12d0a7cb5614aec3d6ba305739da56ee47df"
   },
   {
     "code": "gE",
@@ -1687,7 +1687,7 @@
   {
     "code": "gH",
     "name": "Fortress Guard",
-    "id": "UNKNOWN"
+    "id": "d833977fc36da1d016ad8e1dc00e0c1f653b8bcf"
   },
   {
     "code": "gI",
@@ -1732,7 +1732,7 @@
   {
     "code": "gQ",
     "name": "Gardener's Harvest",
-    "id": "UNKNOWN"
+    "id": "4a08ad5bd775e789ab6a7cc5b56975bfcaee544c"
   },
   {
     "code": "gR",
@@ -1742,7 +1742,7 @@
   {
     "code": "gS",
     "name": "Gates of Madness",
-    "id": "UNKNOWN"
+    "id": "dccce9ddee87cdf6658dc0a40e7b9e1de5b8c6cb"
   },
   {
     "code": "gT",
@@ -1772,7 +1772,7 @@
   {
     "code": "gY",
     "name": "Ghost Fanatic",
-    "id": "UNKNOWN"
+    "id": "6fc5b758f2432e45e9d89e6b03defa54fa6a5327"
   },
   {
     "code": "gZ",
@@ -1792,7 +1792,7 @@
   {
     "code": "hc",
     "name": "Giant Chicken",
-    "id": "UNKNOWN"
+    "id": "246c579ba03cb2059e62699ed13fd8f20c44d7e8"
   },
   {
     "code": "hd",
@@ -1832,7 +1832,7 @@
   {
     "code": "hk",
     "name": "Gnarl Rootbender",
-    "id": "UNKNOWN"
+    "id": "a0b2d3dea7a8396ccf5b928d5df90289f5698a11"
   },
   {
     "code": "hl",
@@ -1847,7 +1847,7 @@
   {
     "code": "hn",
     "name": "Golden Initiate",
-    "id": "UNKNOWN"
+    "id": "6e66f99ec5fcc558124f6fb489e0f7d8ab0b0046"
   },
   {
     "code": "ho",
@@ -1892,7 +1892,7 @@
   {
     "code": "hx",
     "name": "Greatwood Elder",
-    "id": "UNKNOWN"
+    "id": "a653d3d71ede3c8980b16dd60bbcea05b085b159"
   },
   {
     "code": "hy",
@@ -1942,7 +1942,7 @@
   {
     "code": "hI",
     "name": "Grummite Magus",
-    "id": "UNKNOWN"
+    "id": "7201ea7de236bb09f40a0250222b14aff51de77e"
   },
   {
     "code": "hJ",
@@ -1987,7 +1987,7 @@
   {
     "code": "hR",
     "name": "Haskill",
-    "id": "UNKNOWN"
+    "id": "db615d8b5ed98d03f408774d3ddc5354201bd981"
   },
   {
     "code": "hS",
@@ -2037,7 +2037,7 @@
   {
     "code": "ib",
     "name": "Heretic Conjurer",
-    "id": "UNKNOWN"
+    "id": "2e26a85071f2bbdbc6ac2d4087136125b6619b4e"
   },
   {
     "code": "ic",
@@ -2132,7 +2132,7 @@
   {
     "code": "iv",
     "name": "Hulking Scalon",
-    "id": "UNKNOWN"
+    "id": "61a662d3cc05351e94b9bd152e1c73258de9e7a1"
   },
   {
     "code": "iw",
@@ -2162,7 +2162,7 @@
   {
     "code": "iB",
     "name": "Icy Shambles",
-    "id": "UNKNOWN"
+    "id": "377aded867286dea9b70ff8dd81f98420adede74"
   },
   {
     "code": "iC",
@@ -2322,7 +2322,7 @@
   {
     "code": "jh",
     "name": "Jyggalag's Incursion",
-    "id": "UNKNOWN"
+    "id": "bea7af9f71c63d2f2e21a2cb5786c931c823b54f"
   },
   {
     "code": "ji",
@@ -2362,7 +2362,7 @@
   {
     "code": "jp",
     "name": "Knight of Order",
-    "id": "UNKNOWN"
+    "id": "7e0a45f2669bba43d5fb25fb38d72f4f55c78b9d"
   },
   {
     "code": "jq",
@@ -2387,7 +2387,7 @@
   {
     "code": "jv",
     "name": "Lady Syl's Cruelty",
-    "id": "UNKNOWN"
+    "id": "d3eb48af1c7ff19a08a752d03219d15f8dab148a"
   },
   {
     "code": "jw",
@@ -2507,7 +2507,7 @@
   {
     "code": "jV",
     "name": "Luzrah gro-Shar",
-    "id": "UNKNOWN"
+    "id": "d110f6e204f2f05f0d3d3b9ea50798b5047d1659"
   },
   {
     "code": "jW",
@@ -2522,7 +2522,7 @@
   {
     "code": "jY",
     "name": "Mad Dash",
-    "id": "UNKNOWN"
+    "id": "7a5480e0a8fa3cab3f77dc39c70b372a9750c646"
   },
   {
     "code": "jZ",
@@ -2557,12 +2557,12 @@
   {
     "code": "kf",
     "name": "Manic Grummite/Demented Grummite",
-    "id": "UNKNOWN"
+    "id": "13639f642271ae33067b8b46a9cc1485b0e1b56c"
   },
   {
     "code": "kg",
     "name": "Manic Jack/Manic Mutation",
-    "id": "UNKNOWN"
+    "id": "ddb158c049d7bbf5aa9a7b93d3d325f00e993838"
   },
   {
     "code": "kh",
@@ -2862,12 +2862,12 @@
   {
     "code": "lq",
     "name": "Wake the Dead",
-    "id": "UNKNOWN"
+    "id": "e96c5dd35e5e1ea220137c8fea420dbc87aff462"
   },
   {
     "code": "lr",
     "name": "Nervous Giant",
-    "id": "UNKNOWN"
+    "id": "6879245692fc663f8c4b582f45e226a6371505b9"
   },
   {
     "code": "ls",
@@ -3077,7 +3077,7 @@
   {
     "code": "mi",
     "name": "Pointy Wall of Spikes",
-    "id": "UNKNOWN"
+    "id": "2d4c5065c8502d4a225b824909adc3d90c16342c"
   },
   {
     "code": "mj",
@@ -3102,7 +3102,7 @@
   {
     "code": "mn",
     "name": "Preying Elytra",
-    "id": "UNKNOWN"
+    "id": "68a66c672530f84e808a2b1e3ded20254ab88c42"
   },
   {
     "code": "mo",
@@ -3217,7 +3217,7 @@
   {
     "code": "mK",
     "name": "Tavyar the Knight/Rayvat the Mage",
-    "id": "UNKNOWN"
+    "id": "57d67093ddc0a2a320fa8b27c8206d0747a53f79"
   },
   {
     "code": "mL",
@@ -3447,7 +3447,7 @@
   {
     "code": "nE",
     "name": "Seducer Darkfire",
-    "id": "UNKNOWN"
+    "id": "dd54f9d5c602d7df5788e8d4ea9c1834eb64878b"
   },
   {
     "code": "nF",
@@ -3552,7 +3552,7 @@
   {
     "code": "oa",
     "name": "Shining Saint",
-    "id": "UNKNOWN"
+    "id": "6281ef13976e577871636ae7b33fe9114c83c2e3"
   },
   {
     "code": "ob",
@@ -3657,7 +3657,7 @@
   {
     "code": "ov",
     "name": "Skinned Hound",
-    "id": "UNKNOWN"
+    "id": "201f9a91b9710781e8135bc342dfb5e8fd540c6e"
   },
   {
     "code": "ow",
@@ -3777,7 +3777,7 @@
   {
     "code": "oT",
     "name": "Spawn Mother/Baliwog",
-    "id": "UNKNOWN"
+    "id": "d4fa34e689511ae8fa3b3f3eaf038aa4ea578b97"
   },
   {
     "code": "oU",
@@ -3827,12 +3827,12 @@
   {
     "code": "pd",
     "name": "Seething Flesh Golem",
-    "id": "UNKNOWN"
+    "id": "61b7663b6db95edcf3ad365e349c4330ab523880"
   },
   {
     "code": "pe",
     "name": "Squish the Wimpy",
-    "id": "UNKNOWN"
+    "id": "3471f9a60c66b3501f00ef872be65dd180b572f1"
   },
   {
     "code": "pf",
@@ -3882,7 +3882,7 @@
   {
     "code": "po",
     "name": "Baliwog Tidecrawlers/Smoked Baliwog Leg",
-    "id": "UNKNOWN"
+    "id": "3a2ce71ececaca60e2cb1ad9c6a1a2e3017437cb"
   },
   {
     "code": "pp",
@@ -4067,7 +4067,7 @@
   {
     "code": "qb",
     "name": "Ring of Lordship",
-    "id": "UNKNOWN"
+    "id": "3b6a370203fe88afac05bb12f498362af4cd302a"
   },
   {
     "code": "qc",
@@ -4132,7 +4132,7 @@
   {
     "code": "qo",
     "name": "The Gatekeeper",
-    "id": "UNKNOWN"
+    "id": "a433b940950f9cc739e002e8db10670db867487d"
   },
   {
     "code": "qp",
@@ -4212,7 +4212,7 @@
   {
     "code": "qE",
     "name": "Tiny Dragon",
-    "id": "UNKNOWN"
+    "id": "ed4b67c0e6add277141c2605ed281dc216fa6174"
   },
   {
     "code": "qF",
@@ -4242,7 +4242,7 @@
   {
     "code": "qK",
     "name": "Transmogrify",
-    "id": "UNKNOWN"
+    "id": "960742860eb085c9233c4121898d683038892f53"
   },
   {
     "code": "qL",
@@ -4282,7 +4282,7 @@
   {
     "code": "qS",
     "name": "Trouble Seeker",
-    "id": "UNKNOWN"
+    "id": "560f6f9ac1e34d7bb8bb16077383841011531344"
   },
   {
     "code": "qT",
@@ -4367,7 +4367,7 @@
   {
     "code": "rj",
     "name": "Unstable Madman",
-    "id": "UNKNOWN"
+    "id": "fed639a61748e360b42f976127ac9f4eb711c681"
   },
   {
     "code": "rk",
@@ -4622,7 +4622,7 @@
   {
     "code": "si",
     "name": "Xavara Atronach",
-    "id": "UNKNOWN"
+    "id": "e0922e2ae940a1004cf3aa06d4f3aada5743ba2c"
   },
   {
     "code": "sj",
@@ -4647,536 +4647,536 @@
   {
     "code": "sn",
     "name": "Renegade Magister",
-    "id": "UNKNOWN"
+    "id": "d42bd6137204ef76c7bb716151ead9eebef0b548"
   },
   {
     "code": "so",
     "name": "Training Grounds",
-    "id": "UNKNOWN"
+    "id": "41d0b38c873058e89b5cfc5930287ef7436f6867"
   },
   {
     "code": "sp",
     "name": "Murkwater Scourge",
-    "id": "UNKNOWN"
+    "id": "7fe9405576bd089b9674217de2deb8356c7fa689"
   },
   {
     "code": "sv",
     "name": "Alchemy",
-    "id": "UNKNOWN"
+    "id": "cb59d6aaf4ca935c70ae33eb01e7c8db184669ac"
   },
   {
     "code": "sw",
     "name": "Altmer Flameslinger",
-    "id": "UNKNOWN"
+    "id": "9264638fd7ffa928f402665f648b7921430f6191"
   },
   {
     "code": "sx",
     "name": "Ayrenn, Dominion Queen",
-    "id": "UNKNOWN"
+    "id": "ccebe1e961cc8cf1dab91d0ddbe30fe6dba57fb5"
   },
   {
     "code": "sy",
     "name": "Dominion Battlereeve",
-    "id": "UNKNOWN"
+    "id": "07b4909ce214f65df9d8a346345b4788b1230f92"
   },
   {
     "code": "sA",
     "name": "Baandari Opportunist",
-    "id": "UNKNOWN"
+    "id": "d899e751398a015e8ee87196f972d491836ca85e"
   },
   {
     "code": "sB",
     "name": "Battle of Chalman Keep",
-    "id": "UNKNOWN"
+    "id": "e942f591092cbb95640e6008da33f39779462166"
   },
   {
     "code": "sC",
     "name": "Imperial Lackey",
-    "id": "UNKNOWN"
+    "id": "bac08e32930cd9add803fd1bd46dbb45dadcb7ab"
   },
   {
     "code": "sD",
     "name": "Bishop of the Hour",
-    "id": "UNKNOWN"
+    "id": "d23bb84b36fcde3c2af785a35cc7881d02f413f0"
   },
   {
     "code": "sE",
     "name": "Black Marsh Centurion",
-    "id": "UNKNOWN"
+    "id": "d9f990b2d09935b71e90b60312e706fd9005b4d5"
   },
   {
     "code": "sF",
     "name": "Black Marsh Prodigy",
-    "id": "UNKNOWN"
+    "id": "cba4c3e61591450236a4574ecb2a114524e81bea"
   },
   {
     "code": "sG",
     "name": "Cauterize",
-    "id": "UNKNOWN"
+    "id": "feba2605b72d9e19a9c510931b82a5f61d8aa8b3"
   },
   {
     "code": "sH",
     "name": "Channeled Storm",
-    "id": "UNKNOWN"
+    "id": "ce2ea12e0d3dc9c2f213d77317831bdbfbffff26"
   },
   {
     "code": "sI",
     "name": "Clivia Tharn",
-    "id": "UNKNOWN"
+    "id": "d39df9e406c3397abd09c004c9c3328921d63d3d"
   },
   {
     "code": "sJ",
     "name": "Bewildering Speed",
-    "id": "UNKNOWN"
+    "id": "8c0598a2a95bd14f21976b6f907f9a26c874d416"
   },
   {
     "code": "sK",
     "name": "Ebonthread Cloak",
-    "id": "UNKNOWN"
+    "id": "9b8750d790f4331b6c233a679bbf508c2cecd5b0"
   },
   {
     "code": "sL",
     "name": "Covenant Mail",
-    "id": "UNKNOWN"
+    "id": "dcccaec18e669e3569edb54f9616ea811959eecb"
   },
   {
     "code": "sM",
     "name": "Covenant Masterpiece",
-    "id": "UNKNOWN"
+    "id": "20b9622e782f3f37f2628b0cd638f71ebb5915f4"
   },
   {
     "code": "sN",
     "name": "Covenant Oathman",
-    "id": "UNKNOWN"
+    "id": "4ce3bbdc37e6c8fabb3f1cd6140ec85df4f70301"
   },
   {
     "code": "sO",
     "name": "Craven Conscript",
-    "id": "UNKNOWN"
+    "id": "e085bf74179bf676848e4fed55b2302689dc05da"
   },
   {
     "code": "sP",
     "name": "Wish",
-    "id": "UNKNOWN"
+    "id": "7b48e9422843636d378a07df36257be575d5fdb0"
   },
   {
     "code": "sQ",
     "name": "Empire Oathman",
-    "id": "UNKNOWN"
+    "id": "4bb1cedfa1726b4544da12690c25454a4d04ca34"
   },
   {
     "code": "sR",
     "name": "Daedric Titan",
-    "id": "UNKNOWN"
+    "id": "2fd924a8f555528b1f2b0b545e996c15ef452d0d"
   },
   {
     "code": "sS",
     "name": "Dark Anchor",
-    "id": "UNKNOWN"
+    "id": "15c3ac13b98b37000d13f6d557ba62486ca23dd0"
   },
   {
     "code": "sT",
     "name": "Luminous Shards",
-    "id": "UNKNOWN"
+    "id": "aae39612f645048e7cf75e425035a54dcea1e92d"
   },
   {
     "code": "sU",
     "name": "Dominion Oathman",
-    "id": "UNKNOWN"
+    "id": "87c71d9d5d49bd01f6d3f51d7465c457cefcb7fc"
   },
   {
     "code": "sV",
     "name": "Dragonguard Outcast",
-    "id": "UNKNOWN"
+    "id": "e4e80d550c5d3aa99ef751a71aea58c3239984ee"
   },
   {
     "code": "sW",
     "name": "Dunmer Tyro",
-    "id": "UNKNOWN"
+    "id": "ca8b2d9650417191726089ef6e0fef5c156df7ca"
   },
   {
     "code": "sX",
     "name": "Forerunner of the Pact",
-    "id": "UNKNOWN"
+    "id": "e36f077651b09cd196c8907e177645b7ee10d00f"
   },
   {
     "code": "sY",
     "name": "Strategist's Map",
-    "id": "UNKNOWN"
+    "id": "0a96c17907e305c4072c7adf57c58faf603619f8"
   },
   {
     "code": "sZ",
     "name": "Emeric, Covenant King",
-    "id": "UNKNOWN"
+    "id": "c8d7b256550830e994cf044f0d04de479b65c8e3"
   },
   {
     "code": "ta",
     "name": "Back-Alley Footpad",
-    "id": "UNKNOWN"
+    "id": "3191ef47c29536a6fbc08b831a1a694570117d60"
   },
   {
     "code": "tb",
     "name": "Ayrenn's Chosen",
-    "id": "UNKNOWN"
+    "id": "9a56893a39ed20deb4a5fa0eba59078960619630"
   },
   {
     "code": "tc",
     "name": "Enlistment Officer",
-    "id": "UNKNOWN"
+    "id": "10a19fff2e79e1d4672e853259728eeb3d839e6c"
   },
   {
     "code": "td",
     "name": "Unrelenting Siege",
-    "id": "UNKNOWN"
+    "id": "9859ec6b82e8c9c580f90b627ab5862db2cf5ae1"
   },
   {
     "code": "te",
     "name": "Guildsworn Bloodluster",
-    "id": "UNKNOWN"
+    "id": "73e8413ccd1b8dc7c58eb1e070b7992e83af103a"
   },
   {
     "code": "tf",
     "name": "Fighters Guild Elite",
-    "id": "UNKNOWN"
+    "id": "b1b4adef272bb0228eb133e6f9363583edaa1152"
   },
   {
     "code": "tg",
     "name": "Forked Bolt",
-    "id": "UNKNOWN"
+    "id": "78447f6b78e98902fda5344ea40f7ce14feb4cac"
   },
   {
     "code": "th",
     "name": "Forward Camp",
-    "id": "UNKNOWN"
+    "id": "99bbb59e41944f05fa48298ccfe915e695112467"
   },
   {
     "code": "ti",
     "name": "Guildsworn Apprentice",
-    "id": "UNKNOWN"
+    "id": "966cadebd4b67b3f2884ae45e5b7ed17d8f3ecdc"
   },
   {
     "code": "tj",
     "name": "Guildsworn Cavalier",
-    "id": "UNKNOWN"
+    "id": "7a13067420010eae0130590e0aa7117fd5f2ec51"
   },
   {
     "code": "tk",
     "name": "Guildsworn Wayfarer",
-    "id": "UNKNOWN"
+    "id": "12594918946eb6e1b33cec310c4643722a4d2cf2"
   },
   {
     "code": "tl",
     "name": "Guildsworn Oathman",
-    "id": "UNKNOWN"
+    "id": "9b8c4a17cad953745002ef1fec02da8972d72805"
   },
   {
     "code": "tm",
     "name": "Guildsworn Revitalizer",
-    "id": "UNKNOWN"
+    "id": "0c227f591c98c7ad048132c52fc27075a5737efc"
   },
   {
     "code": "tn",
     "name": "Fighters Guild Berserker",
-    "id": "UNKNOWN"
+    "id": "c372bdbde0c58606a9bb3b3753b6be4e0bb6603e"
   },
   {
     "code": "to",
     "name": "High Rock Stalwart",
-    "id": "UNKNOWN"
+    "id": "685dfe404e53aa9b2cb9881f33b519aa8f831cf5"
   },
   {
     "code": "tp",
     "name": "Steel-Eyed Visionary",
-    "id": "UNKNOWN"
+    "id": "87dd1d7a0c86fcbcbf1b63a6814416b129fe048b"
   },
   {
     "code": "tq",
     "name": "Hush",
-    "id": "UNKNOWN"
+    "id": "749e74e071ddd42e30e3f9143c9d89c419345e9f"
   },
   {
     "code": "tr",
     "name": "Empire Dreadmage",
-    "id": "UNKNOWN"
+    "id": "11e4d9d60bd4d73c75ab78ae5610d3472ca4e5f0"
   },
   {
     "code": "ts",
     "name": "Empire Recruiter",
-    "id": "UNKNOWN"
+    "id": "38193d438e29acacd6d87d6b1b22ac5927a64a50"
   },
   {
     "code": "tt",
     "name": "Bruma Oppressor",
-    "id": "UNKNOWN"
+    "id": "dc6e2b291996585074703a61a19a823eb6d46299"
   },
   {
     "code": "tu",
     "name": "Inspiring Soldier",
-    "id": "UNKNOWN"
+    "id": "e2e9aa4a1b6d8bb6ae4fa31b5c56ada4eb87f49a"
   },
   {
     "code": "tv",
     "name": "Assassin Beetle",
-    "id": "UNKNOWN"
+    "id": "4f2f1fc5657cb90ef4d0bc64c71dc870209edb64"
   },
   {
     "code": "tw",
     "name": "Jorunn the Skald-King",
-    "id": "UNKNOWN"
+    "id": "4a1d1e8d95e78b61aff49be75e9203bef88c1a2b"
   },
   {
     "code": "tx",
     "name": "Jorunn's Vanguard",
-    "id": "UNKNOWN"
+    "id": "3d435e47ac32db66e0bea4fad9db454af6c25afd"
   },
   {
     "code": "ty",
     "name": "Mystic of Ancient Rites",
-    "id": "UNKNOWN"
+    "id": "595fe7e99649bb710b8aaed1a763ca4fa62ad2e3"
   },
   {
     "code": "tz",
     "name": "Emeric's Warlord",
-    "id": "UNKNOWN"
+    "id": "6da42ed3d55f83137aa316dbab1f913bea18fc7b"
   },
   {
     "code": "tA",
     "name": "Legion Zero Templar",
-    "id": "UNKNOWN"
+    "id": "209e466c46f43d72823e959997f7a2e0f67f7365"
   },
   {
     "code": "tB",
     "name": "Lyris Titanborn",
-    "id": "UNKNOWN"
+    "id": "22002e87f764adf7c4b0834b9d7ae26e8c1c7708"
   },
   {
     "code": "tC",
     "name": "Nereid Sister",
-    "id": "UNKNOWN"
+    "id": "763f6176be43d25d2398c5a437c7373372e58020"
   },
   {
     "code": "tD",
     "name": "Mannimarco",
-    "id": "UNKNOWN"
+    "id": "d859521bcb7412939b7da87a426e7def2e0fa76e"
   },
   {
     "code": "tE",
     "name": "Covenant Plate",
-    "id": "UNKNOWN"
+    "id": "1e6dc98fea8b2b85e858bcdd628f6d22a554062c"
   },
   {
     "code": "tF",
     "name": "Lion Guard Armaments",
-    "id": "UNKNOWN"
+    "id": "6a65b2be63031ae69e3f3baa0d1d402617c14ebc"
   },
   {
     "code": "tG",
     "name": "Mournhold Taskmaster",
-    "id": "UNKNOWN"
+    "id": "8f5d60b36fee2b967b7d2db32c1c3f7d7a9d5388"
   },
   {
     "code": "tH",
     "name": "Cruel Axe",
-    "id": "UNKNOWN"
+    "id": "259c84845176878e1a30da942e513d202da11796"
   },
   {
     "code": "tI",
     "name": "Ornamented Sword",
-    "id": "UNKNOWN"
+    "id": "3d02c93acd5aee8b4808ccc221f9baf0d6fd5647"
   },
   {
     "code": "tK",
     "name": "Orsinium Forge",
-    "id": "UNKNOWN"
+    "id": "2dfd82b26be1d8ab5e244a8c20ae458f47d602e0"
   },
   {
     "code": "tL",
     "name": "Outflank",
-    "id": "UNKNOWN"
+    "id": "990098b8738e63267e9be6cb814600aee8cf3712"
   },
   {
     "code": "tM",
     "name": "Pact Oathman",
-    "id": "UNKNOWN"
+    "id": "2d0849eb2e6f75c8dd2390d69eddc86c32f537ee"
   },
   {
     "code": "tN",
     "name": "Shadowscale Hunter",
-    "id": "UNKNOWN"
+    "id": "b21a4437790d44629456063ae1c1528ac6692d9c"
   },
   {
     "code": "tO",
     "name": "Pact Shieldbearer",
-    "id": "UNKNOWN"
+    "id": "5c5ca1924809c9f41dc45ffec9bdccc4b552bfd6"
   },
   {
     "code": "tP",
     "name": "Soul Shred",
-    "id": "UNKNOWN"
+    "id": "8a0ba4dcda31ea4909af97d7309fd2c4d1420869"
   },
   {
     "code": "tQ",
     "name": "Poisoned Dagger",
-    "id": "UNKNOWN"
+    "id": "8207269c99264be92b342a496a77cfb653ae9e0f"
   },
   {
     "code": "tR",
     "name": "Guildsworn Incendiary",
-    "id": "UNKNOWN"
+    "id": "ecf93280760d4ac1e931dc0c81fba1b9f636051e"
   },
   {
     "code": "tS",
     "name": "Ravaging Elixir",
-    "id": "UNKNOWN"
+    "id": "fb1ee4497ba2647bcc410e9f56d861ccefa2afe6"
   },
   {
     "code": "ud",
     "name": "Renowned Instructor",
-    "id": "UNKNOWN"
+    "id": "d5dacfebbe8dd7c3e1f9ea81e2c2eb50813d87b4"
   },
   {
     "code": "ue",
     "name": "Sound the Alarm",
-    "id": "UNKNOWN"
+    "id": "4d50f8dd41f2c33bfefec9f379500eaf3a0dc4b9"
   },
   {
     "code": "uf",
     "name": "Sai Sahan",
-    "id": "UNKNOWN"
+    "id": "bf96f52abd70fecf28e4fda006dbfcde3b068158"
   },
   {
     "code": "ug",
     "name": "Salvage",
-    "id": "UNKNOWN"
+    "id": "a71f3ce32637b0edb2dfaad54937649eda743c03"
   },
   {
     "code": "uh",
     "name": "Soul Wraith",
-    "id": "UNKNOWN"
+    "id": "4a091128051f3dff273390853a21b046fd4a8ffb"
   },
   {
     "code": "ui",
     "name": "Soulburst",
-    "id": "UNKNOWN"
+    "id": "2cf1bc2869911f729bf17fc4d95e1f55c8b8550b"
   },
   {
     "code": "uj",
     "name": "Sparksmith",
-    "id": "UNKNOWN"
+    "id": "d41fdc9d4e1e82481a00e1be8ddc76810e83db21"
   },
   {
     "code": "uk",
     "name": "Spiny Haj Mota",
-    "id": "UNKNOWN"
+    "id": "c339dee0f0ab01857c4f55bfdcc3bb1c05f1dba5"
   },
   {
     "code": "ul",
     "name": "Daggerfall Phantom",
-    "id": "UNKNOWN"
+    "id": "cc9b8c095fd69bec6a671107a1063b3f3c3191d9"
   },
   {
     "code": "um",
     "name": "Spoils of War",
-    "id": "UNKNOWN"
+    "id": "946641ccf763e7a79ef8d9407b6e2100cd3a893d"
   },
   {
     "code": "un",
     "name": "Great Moot Squire",
-    "id": "UNKNOWN"
+    "id": "8d2e25a6ab2e6e8de9aebb7b0590b3c8ec8d7873"
   },
   {
     "code": "uo",
     "name": "Staff of Ice",
-    "id": "UNKNOWN"
+    "id": "a74e2d0909db8a6bd79971ffacc2f5a03756ff37"
   },
   {
     "code": "up",
     "name": "Guildsworn Honeytongue",
-    "id": "UNKNOWN"
+    "id": "f8bf39e844391e9331a69718072aef9225007bc4"
   },
   {
     "code": "uq",
     "name": "Strategic Deployment",
-    "id": "UNKNOWN"
+    "id": "668900da2d90141c947fe6872413bd9564437abe"
   },
   {
     "code": "ur",
     "name": "Supply Runner",
-    "id": "UNKNOWN"
+    "id": "7e9c84710eead1e23b3657ac95737b7fa509bfe3"
   },
   {
     "code": "us",
     "name": "Telekinesis",
-    "id": "UNKNOWN"
+    "id": "3589e203102779d53a4a832fdc7099314e32d0a7"
   },
   {
     "code": "ut",
     "name": "The Ruby Throne",
-    "id": "UNKNOWN"
+    "id": "3719104f228932dc391f10b9d2a5543935166194"
   },
   {
     "code": "uu",
     "name": "Transitus Shrine",
-    "id": "UNKNOWN"
+    "id": "28235280185e037ff4be2fa2ae36486fdad8a789"
   },
   {
     "code": "uv",
     "name": "Valenwood Sentry",
-    "id": "UNKNOWN"
+    "id": "478f946b264e54677974723f454d0768a8a0037e"
   },
   {
     "code": "uw",
     "name": "Vanus Galerion",
-    "id": "UNKNOWN"
+    "id": "2d927f4f91c3db62f4f348879b17f13ce58c9b7c"
   },
   {
     "code": "ux",
     "name": "Varen Aquilarios",
-    "id": "UNKNOWN"
+    "id": "a13a9a53d8d87dcdfb5729a0060c2b62cc231e8b"
   },
   {
     "code": "uy",
     "name": "Invoker of the Hist",
-    "id": "UNKNOWN"
+    "id": "a6196a768bc169cb0ad2d054b1ac9b202f2a53bf"
   },
   {
     "code": "uz",
     "name": "Debilitate",
-    "id": "UNKNOWN"
+    "id": "49d07cf81092c24cb18fad80cc87ab3710942c63"
   },
   {
     "code": "uA",
     "name": "Gray Viper Brigand",
-    "id": "UNKNOWN"
+    "id": "7b85e561687bd9117d30b39294763e3082eb8779"
   },
   {
     "code": "uB",
     "name": "Windhelm Gatekeeper",
-    "id": "UNKNOWN"
+    "id": "812c091ac9b2e93a636849bc8580c819d96168aa"
   },
   {
     "code": "uC",
     "name": "Xivkyn Banelord",
-    "id": "UNKNOWN"
+    "id": "068c11d5deea1b156336e7818b918b901947b720"
   },
   {
     "code": "uD",
     "name": "Master of Incunabula",
-    "id": "UNKNOWN"
+    "id": "a9a787d815e7da2e18256b157375cb1da4e65609"
   },
   {
     "code": "uE",
     "name": "Mages Guild Conjurer",
-    "id": "UNKNOWN"
+    "id": "b221f001230de1b7e5042fe84b370e8d6b3f24ef"
   },
   {
     "code": "uF",
     "name": "Vanus's Scribe",
-    "id": "UNKNOWN"
+    "id": "1d6ebb1bfe47a3692a737910d4a4ea75217505e5"
   },
   {
     "code": "uG",
     "name": "Abnur Tharn",
-    "id": "UNKNOWN"
+    "id": "0f6d24aa3f6d995def0f05b61d1839b9d58061c0"
   }
 ]

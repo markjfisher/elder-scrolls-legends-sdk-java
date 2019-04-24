@@ -14,3 +14,5 @@ dist
 
 .attach_pid*
 .DS_Store
+
+decoder/map.json
