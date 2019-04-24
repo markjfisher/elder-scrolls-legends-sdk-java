@@ -7,7 +7,7 @@ https://elderscrollslegends.io.
 
 #### Gradle/maven dependency
 
-Latest version is `1.1.0`
+Latest version is `1.1.1`
 
 <table>
 <thead><tr><th>Approach</th><th>Instruction</th></tr></thead>
