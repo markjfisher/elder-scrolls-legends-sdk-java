@@ -17,6 +17,26 @@
 where paramMap is a `Map<String, String>` of queriable fields, as detailed in paramters section of
 https://docs.elderscrollslegends.io/#api_v1cards_list
 
+## CardCache
+
+This can be used to pre-load the cards into the JVM, so that they can be used
+by their sdk ID, or export code.
+
+### Loading the cache with all cards
+
+This will pre-load. If you don't pre-load, the cards will be cached as
+they are fetched with `findByCode` or `findById`.
+
+    CardCache.load()
+
+### Finding by export code
+
+    CardCache.findByCode(exportCode)
+
+### Finding by SDK Id
+
+    CardCache.findById(id)
+
 ## Decks
 
 Decks are supported to allow importing from a code, or creating from lists of Card objects.
