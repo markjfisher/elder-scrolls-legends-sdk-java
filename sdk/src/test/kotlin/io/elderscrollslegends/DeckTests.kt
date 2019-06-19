@@ -60,25 +60,31 @@ class DeckTests {
 
     @Test
     fun `importing code returns a deck with correct cards`() {
-        // Given
         val response = mockk<HttpResponse<JsonNode>>()
-        val card1s = "{'card': {'name': 'card1', 'id': 'c1' }}"
-        val card2s = "{'card': {'name': 'card2', 'id': 'c2' }}"
-        val card3s = "{'card': {'name': 'card3', 'id': 'c3' }}"
-        val card4s = "{'card': {'name': 'card4', 'id': 'c4' }}"
         every { client.request(any(), any<Function<RawResponse, HttpResponse<JsonNode>>>()) } returns response
         every { response.isSuccess } returns true
-        // We respond with 4 cards for the 4 import codes "aa", "bb", "cc", "cc"
-        every { response.body } returnsMany listOf(JsonNode(card1s), JsonNode(card2s), JsonNode(card3s), JsonNode(card4s))
+
+        val cards1 = String(this::class.java.getResource("/cards-page1.json").readBytes())
+        val cards2 = String(this::class.java.getResource("/cards-page2.json").readBytes())
+        val cards3 = String(this::class.java.getResource("/cards-page3.json").readBytes())
+        every { response.body } returnsMany listOf(JsonNode(cards1), JsonNode(cards2), JsonNode(cards3))
+
+        CardCache.load()
+
+        // Codes:
+        // cc = 7f62d718099821fc9945af326ef29f406f039f71
+        // cA = 54798ac9d0703e215316a302b98f5a35e349d553
+        // cL = 3617a6f2914cb54376fef96fa256f2f4f8434707
+        // dh = 74e2126b539b088dce67e98d0948aa7bf55e74f8
 
         // When
-        val deck2 = Deck.importCode("SPABaaABbbACccdd")
+        val deck2 = Deck.importCode("SPABccABcAACcLdh")
 
         // Then
-        assertThat(deck2.byId("c1")).isEqualTo(CardCount(card = card1, count = 1))
-        assertThat(deck2.byId("c2")).isEqualTo(CardCount(card = card2, count = 2))
-        assertThat(deck2.byId("c3")).isEqualTo(CardCount(card = card3, count = 3))
-        assertThat(deck2.byId("c4")).isEqualTo(CardCount(card = card4, count = 3))
+        assertThat(deck2.byId("7f62d718099821fc9945af326ef29f406f039f71").count).isEqualTo(1)
+        assertThat(deck2.byId("54798ac9d0703e215316a302b98f5a35e349d553").count).isEqualTo(2)
+        assertThat(deck2.byId("3617a6f2914cb54376fef96fa256f2f4f8434707").count).isEqualTo(3)
+        assertThat(deck2.byId("74e2126b539b088dce67e98d0948aa7bf55e74f8").count).isEqualTo(3)
         assertThat(deck2.byId("xx")).isEqualTo(CardCount())
     }
 

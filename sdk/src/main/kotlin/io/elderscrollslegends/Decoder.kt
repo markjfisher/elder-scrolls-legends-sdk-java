@@ -15,7 +15,7 @@ open class Decoder(
             .map { it.optString("id") to it.optString("code") }
             .toMap()
 
-        private val codeToIdMap = JSONArray(mapData)
+        val codeToIdMap = JSONArray(mapData)
             .let { 0.until(it.length()).map { i -> it.optJSONObject(i) } }
             .map { it.optString("code") to it.optString("id") }
             .toMap()
@@ -54,8 +54,7 @@ open class Decoder(
         val items = mutableListOf<Card>()
         repeat(0.until(count).count()) {
             val code = seq.take(2)
-            val id = codeToIdMap.getOrDefault(code, "NOT_FOUND")
-            val card = Card.find(id)
+            val card = CardCache.findByCode(code)
             val x = MutableList(of) { card }.mapNotNull { it }
             items.addAll(x)
         }

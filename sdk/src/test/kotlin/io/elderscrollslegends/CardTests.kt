@@ -68,7 +68,6 @@ class CardTests {
         every { response.body } returnsMany listOf(JsonNode(cards1), JsonNode(cards2), JsonNode(cards3))
 
         // when
-        // val x = unirestClient.get("cards", Cards::class.java)
         val allCards = Card.all()
 
         // then
