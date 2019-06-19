@@ -7,7 +7,7 @@ https://elderscrollslegends.io.
 
 #### Gradle/maven dependency
 
-Latest version is `1.1.1`
+Latest version is `1.1.2`
 
 <table>
 <thead><tr><th>Approach</th><th>Instruction</th></tr></thead>
@@ -63,6 +63,11 @@ public class Legends {
 
 		Collection c = Collection.importCode("SP!#hlfv!#qEcf!#bkiP");
 		printDetails(c);
+
+		CardCache.load(); // Load all cards into cache - useful if you have long running process doing export code lookups
+		// Goblin skulk by export code, or sdk Id.
+		Card c1 = CardCache.findByCode("hl"); // Use export code to find a card
+		Card c2 = CardCache.findById("2413799c807377f860cd9fe2e6c472bdbb1360a7"); // Use sdk Id to find a card
 	}
 
 	private static void printDetails(CardGrouping c) {
