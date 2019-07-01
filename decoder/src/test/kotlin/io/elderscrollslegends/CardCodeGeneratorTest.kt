@@ -7,8 +7,8 @@ class CardCodeGeneratorTest {
     @Test
     fun `combining letters`() {
         val codes = CardCodeGenerator().generateCardCodeCombinations()
-        Assertions.assertThat(codes.size).isEqualTo(2704)
+        Assertions.assertThat(codes.size).isEqualTo(1352)
         Assertions.assertThat(codes.first()).isEqualTo("aa")
-        Assertions.assertThat(codes.last()).isEqualTo("ZZ")
+        Assertions.assertThat(codes.last()).isEqualTo("zZ")
     }
 }

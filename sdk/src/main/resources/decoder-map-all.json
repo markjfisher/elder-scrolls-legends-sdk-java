@@ -5178,5 +5178,395 @@
     "code": "uG",
     "name": "Abnur Tharn",
     "id": "0f6d24aa3f6d995def0f05b61d1839b9d58061c0"
+  },
+  {
+    "code": "uH",
+    "name": "Seasoned Captain",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "vA",
+    "name": "Hulking Mummy",
+    "id": "UNKNOWN"
+  },
+  {
+    "code": "vB",
+    "name": "Prowl Smuggler",
+    "id": "3ec8673a54068f0ca3287d15195adbd1928505bf"
+  },
+  {
+    "code": "vC",
+    "name": "Cartel Bruiser",
+    "id": "5dbb160d659293c288db12c5119255a0ca9172b1"
+  },
+  {
+    "code": "vD",
+    "name": "Alfiq Conjurer",
+    "id": "b2e33956496c4b90ab401ea51cf42c8f528805eb"
+  },
+  {
+    "code": "vE",
+    "name": "Imbued Minotaur",
+    "id": "3fbd342387338a06da688da09e08e15583ba3dbf"
+  },
+  {
+    "code": "vF",
+    "name": "Imbued Khajiit",
+    "id": "c47d47eaa1cb5b6131206404041c1c0dc401649a"
+  },
+  {
+    "code": "vG",
+    "name": "Imbued Argonian",
+    "id": "81b41d27bacee6e35cc574ca29ac8ed2dad71cc9"
+  },
+  {
+    "code": "vH",
+    "name": "Imbued Bosmer",
+    "id": "e7e8b4506e2f1947c11c943e54530bb22fb666de"
+  },
+  {
+    "code": "vI",
+    "name": "Imbued Breton",
+    "id": "2f3f798c588e6ab77b75ccbd136353537432bfd0"
+  },
+  {
+    "code": "vJ",
+    "name": "Wandering Skeleton",
+    "id": "00a5583f63415ea26785e0594ea3cf119e0d188a"
+  },
+  {
+    "code": "vK",
+    "name": "Discerning Thief",
+    "id": "324d84bd6255eba13735093785f8e802a9112697"
+  },
+  {
+    "code": "vL",
+    "name": "Skeletal Mage",
+    "id": "8494c778de22e45518174c5f3ebf958052c3e702"
+  },
+  {
+    "code": "vM",
+    "name": "Rebel Warden",
+    "id": "15e247a8f56640d2a93d7fbee0d6116e3363dad6"
+  },
+  {
+    "code": "vN",
+    "name": "Tenarr Zalviit Lurker",
+    "id": "c32bdf4d9832a8222cc6a4e8e691499bbf71a95c"
+  },
+  {
+    "code": "vO",
+    "name": "Seeker of the Black Arts",
+    "id": "1808a8af1913c9464a9e4dd2ae8e5b1084c8da17"
+  },
+  {
+    "code": "vP",
+    "name": "Black Worm Neophyte",
+    "id": "cbaabf5f1587dd3594412d395781bcad45f510a3"
+  },
+  {
+    "code": "vQ",
+    "name": "Bone Armor",
+    "id": "95a8cc39859244bcf6ff7e7ba658fe7c77fa3d4e"
+  },
+  {
+    "code": "vR",
+    "name": "Blastbones",
+    "id": "a716811bb8b9bd9422701e140f63bcc33d8c1813"
+  },
+  {
+    "code": "vS",
+    "name": "Flamespear Dragon",
+    "id": "e7fc52df56bdac67eae1812a6c05c3bb74dcc898"
+  },
+  {
+    "code": "vT",
+    "name": "Shrewd Strategist",
+    "id": "ad3a1991fb71217e12b6b3b68ef47766af6fd912"
+  },
+  {
+    "code": "vU",
+    "name": "Reanimate",
+    "id": "798737cc47d440f963e38c61bc4a8fcdd8df3e3c"
+  },
+  {
+    "code": "vV",
+    "name": "Boneweaver",
+    "id": "7b08a4f997eb48ee23381b895f279e5d31aba3b7"
+  },
+  {
+    "code": "vW",
+    "name": "Crocodile Brute",
+    "id": "f4f29c111a4f756897b2cd5c0f24e4e57ae108e3"
+  },
+  {
+    "code": "vX",
+    "name": "Tenarr Zalviit Nightstalker",
+    "id": "111164d2826d5e5594952b2028e08956ae273960"
+  },
+  {
+    "code": "vY",
+    "name": "Kaalgrontiid",
+    "id": "1a1a29e381de9bf5ace77ecf00daf21591d938b4"
+  },
+  {
+    "code": "vZ",
+    "name": "Zumog Phoom",
+    "id": "338c9dc4b40264b38c9dcfcd6d82ce78236aa1a0"
+  },
+  {
+    "code": "wa",
+    "name": "Ill-Fated Scholar",
+    "id": "c39666f74ad056e07c2b389812a97744fa62352d"
+  },
+  {
+    "code": "wb",
+    "name": "Euraxia Tharn",
+    "id": "07908cadb0b0904ab8a4280d29f45862864186b7"
+  },
+  {
+    "code": "wc",
+    "name": "Wily Kee'va",
+    "id": "0d2b45fa3cfbad5a01fe5e4a2e4fa2511f25766a"
+  },
+  {
+    "code": "wd",
+    "name": "Slinking Jackal",
+    "id": "e108c85f2e3b938464667e58e2e6ed27cfa0a1a0"
+  },
+  {
+    "code": "we",
+    "name": "Euraxian Berserker",
+    "id": "59e0d053b013c7f0bca448356426323a6d750618"
+  },
+  {
+    "code": "wf",
+    "name": "Midnight Trespasser",
+    "id": "74c8be283a08fb6cc6ae063506a40c5c69ccb3c6"
+  },
+  {
+    "code": "wg",
+    "name": "Nibenese Mercenary",
+    "id": "fbf85ef671c6cec95d0ee4ad9e26fc4e2e4e1326"
+  },
+  {
+    "code": "wh",
+    "name": "Senche Graveprowler",
+    "id": "97ed57e60b9e678b9476c8e059ce65959357edca"
+  },
+  {
+    "code": "wi",
+    "name": "Rimmen Siege Weapons",
+    "id": "7d5abd4ccb8e0b7b640b9d4b210e62b1df48df7c"
+  },
+  {
+    "code": "wj",
+    "name": "Devious Bandit",
+    "id": "845be19b43ef290009dc8f1aad4f8dc8dc696977"
+  },
+  {
+    "code": "wk",
+    "name": "Senche Noble",
+    "id": "68926830f73f4c47430091b714ecebff39f508e0"
+  },
+  {
+    "code": "wl",
+    "name": "War-Hardened Senche",
+    "id": "282b377ff2c658a0d591a6f1456b270e338d1aae"
+  },
+  {
+    "code": "wm",
+    "name": "Whispering Claw Strike",
+    "id": "58d2df7e085c99203ddca9f89d60933a2aa6f065"
+  },
+  {
+    "code": "wn",
+    "name": "Pouncing Senche",
+    "id": "8e4a24e70d13b056bd4e5d2f41fc602e5a21eed0"
+  },
+  {
+    "code": "wo",
+    "name": "Moon Gate",
+    "id": "bb8146be0a2e5000238b65f9ddecaf8956f0166a"
+  },
+  {
+    "code": "wp",
+    "name": "Lunar Sway",
+    "id": "a7e6edf29bb15f2ffb23507500a10330383ded49"
+  },
+  {
+    "code": "wq",
+    "name": "Goutfang Adept",
+    "id": "9fc395fa62943719d792098a092c2a68618d7b17"
+  },
+  {
+    "code": "wr",
+    "name": "Grave Grasp",
+    "id": "2ef52235154d2f7f90dcd2d3de61ad3e57117a60"
+  },
+  {
+    "code": "ws",
+    "name": "Fear Totem",
+    "id": "a5406be2a776333a6e01f54dba82b980039fcd4f"
+  },
+  {
+    "code": "wt",
+    "name": "Be at Peace",
+    "id": "f3eabb30fe617feedc4e090e06f9801e067aec7e"
+  },
+  {
+    "code": "wu",
+    "name": "Khajiiti Warhelm",
+    "id": "bf8e681dc4a1ed714a7ca638040bfa6b6a010456"
+  },
+  {
+    "code": "wv",
+    "name": "Smash and Grab",
+    "id": "4d3a94b27816a78289c9611893c62cb768524db7"
+  },
+  {
+    "code": "ww",
+    "name": "Servant of Ja-Kha'jay",
+    "id": "04ae02dcdd03ede0e1455b2063769e682adbb258"
+  },
+  {
+    "code": "wx",
+    "name": "Glacial Dragon",
+    "id": "c38d46f42ec1bb13f606d43b985547c66e33a343"
+  },
+  {
+    "code": "wy",
+    "name": "Dro-m'Athra Reaper",
+    "id": "955abf14e2bb1f84cc07dbdc8036f528b0db6461"
+  },
+  {
+    "code": "wz",
+    "name": "Apex Predator",
+    "id": "b66262a351b66e8d69980275df5a5e522525a530"
+  },
+  {
+    "code": "wA",
+    "name": "Razum-Dar",
+    "id": "6a78630609ad7309639ebf001a871bb728706fab"
+  },
+  {
+    "code": "wB",
+    "name": "Ruin Shambler",
+    "id": "667df2f7c90662cb530b16cc138b86d4ab8e8713"
+  },
+  {
+    "code": "wC",
+    "name": "Monastic Champion",
+    "id": "c9b0776c63475397616daa1d329b9d325ad419bf"
+  },
+  {
+    "code": "wD",
+    "name": "Expunge",
+    "id": "5d3054cdc67c15308a6c8b06e296ef1937d47cfb"
+  },
+  {
+    "code": "wE",
+    "name": "Moontouched Guardian",
+    "id": "84de5cdf13f828fde31eae1622accfb6892b832f"
+  },
+  {
+    "code": "wF",
+    "name": "Frazzled Alfiq",
+    "id": "663a3defa2ea56604be9063a0a5d5ac64e889a5a"
+  },
+  {
+    "code": "wG",
+    "name": "Mercenary Captain",
+    "id": "bf89b821a3e3829ec509fced4b7f6559cc154a09"
+  },
+  {
+    "code": "wH",
+    "name": "Moonphase Suthay",
+    "id": "b4cce852fef295c3cc0a6d94f133c3b4895359f7"
+  },
+  {
+    "code": "wI",
+    "name": "Cartel Arcanist",
+    "id": "03d97c65334c21c5146032d782b46dfae4c10496"
+  },
+  {
+    "code": "wJ",
+    "name": "Mulaamnir",
+    "id": "2a377a3f728cecfc14efe4a41ce19f2b1e0a3397"
+  },
+  {
+    "code": "wK",
+    "name": "Fallen Dragon",
+    "id": "8b1d8ef5580d5a5b3f9aa3acaca35376aa0ea075"
+  },
+  {
+    "code": "wL",
+    "name": "Mausoleum Delver",
+    "id": "2986c6f8a9e75563f16cf0e3508855f3a3a71b65"
+  },
+  {
+    "code": "wM",
+    "name": "Rebellion General",
+    "id": "65d124ee8422c000e6b0f58ed575b69672e403b9"
+  },
+  {
+    "code": "wN",
+    "name": "Illicit Butcher",
+    "id": "52ed26f4612804153da0e8ac48129b079292b694"
+  },
+  {
+    "code": "wO",
+    "name": "Queen's Captain",
+    "id": "e3716054080dc486d03b82a169ad339afb1013b8"
+  },
+  {
+    "code": "wP",
+    "name": "Arise",
+    "id": "8663bf40da082750fcc1263cd865d497f07db96e"
+  },
+  {
+    "code": "wQ",
+    "name": "Vastarie",
+    "id": "57aa761d132a88a015b33ed024bc4857786cc7ad"
+  },
+  {
+    "code": "wR",
+    "name": "Alfiq Illusionist",
+    "id": "0c0e013ede445062f655c15f7dfb234d7daaab27"
+  },
+  {
+    "code": "wS",
+    "name": "Devouring Flame",
+    "id": "b1564a2497f2dc16f38f34f21474e7914c9511aa"
+  },
+  {
+    "code": "wT",
+    "name": "Enraged Dragonknight",
+    "id": "71b8b7ad36d9f4e289dccfdccdcac268463bac39"
+  },
+  {
+    "code": "wU",
+    "name": "Moon Bishop",
+    "id": "6578d8df82e3c61a2a53a3ed63679111526b9b93"
+  },
+  {
+    "code": "wV",
+    "name": "Suthay Bootlegger",
+    "id": "4d7f6be19f83c88d3addb8b20980e00a444df4d2"
+  },
+  {
+    "code": "wW",
+    "name": "Khamira",
+    "id": "0e57b2a901a70890242d0d00ab78e18f47402cfd"
+  },
+  {
+    "code": "wX",
+    "name": "Corinthe Brawler",
+    "id": "448ec76f55c82bca0173d4a728a2f0bf2fe55175"
+  },
+  {
+    "code": "wZ",
+    "name": "Cygnus Standard Bearer",
+    "id": "885db11dd2b0d0401c1acfa79ea13cff3217b611"
   }
 ]
