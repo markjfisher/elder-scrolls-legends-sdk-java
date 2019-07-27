@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "net.markjfisher"
-version = "1.1.3"
+version = "1.1.4"
 val legendsArchiveBaseName = "elderscrolls-legends-sdk-java"
 
 val junitJupiterEngineVersion: String by project
