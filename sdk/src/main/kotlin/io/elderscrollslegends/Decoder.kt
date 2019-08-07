@@ -30,6 +30,33 @@ open class Decoder(
         return "$high$low"
     }
 
+    fun checkImportCode(code: String): Pair<Boolean, List<String>> {
+        if (!isCodeValid(code)) return Pair(false, emptyList())
+
+        val unknowns = mutableListOf<String>()
+
+        val codeSeq = SeqOfString(code)
+        codeSeq.take(2)
+
+        unknowns.addAll(findUnknownCodes(1, codeSeq))
+        unknowns.addAll(findUnknownCodes(2, codeSeq))
+        unknowns.addAll(findUnknownCodes(3, codeSeq))
+
+        return Pair(true, unknowns)
+    }
+
+    private fun findUnknownCodes(of: Int, seq: SeqOfString): List<String> {
+        val count = decodeCountMarker(seq.take(2))
+        val items = mutableListOf<String>()
+        repeat(0.until(count).count()) {
+            val code = seq.take(2)
+            if (codeToIdMap[code] == null) {
+                items.add(code)
+            }
+        }
+        return items
+    }
+
 
     fun createListFromCode(code: String): List<Card> {
         // Minimum decodable string: SPAAAAAA, which is an empty deck.
@@ -38,9 +65,7 @@ open class Decoder(
         val cards = mutableListOf<Card>()
 
         val codeSeq = SeqOfString(code)
-
-        val header = codeSeq.take(2)
-        if (header != "SP") return emptyList()
+        codeSeq.take(2)
 
         cards.addAll(convertSeqToListOfCards(1, codeSeq))
         cards.addAll(convertSeqToListOfCards(2, codeSeq))

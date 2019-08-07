@@ -75,4 +75,20 @@ class DecoderTests {
     }
 
 
+    @Test
+    fun `checking import code for unknown codes and validity`() {
+        val decoder = Decoder(DecoderType.DECK)
+
+        var checkResult = decoder.checkImportCode("NOTSP")
+        assertThat(checkResult.first).isFalse()
+        assertThat(checkResult.second).isEmpty()
+
+        checkResult = decoder.checkImportCode("SPAAAAAA")
+        assertThat(checkResult.first).isTrue()
+        assertThat(checkResult.second).isEmpty()
+
+        checkResult = decoder.checkImportCode("SPAEaaabzazbACaczcACzdad")
+        assertThat(checkResult.first).isTrue()
+        assertThat(checkResult.second).containsExactlyInAnyOrder("za", "zb", "zc", "zd")
+    }
 }

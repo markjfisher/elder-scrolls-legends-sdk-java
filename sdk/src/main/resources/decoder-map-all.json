@@ -5565,8 +5565,23 @@
     "id": "448ec76f55c82bca0173d4a728a2f0bf2fe55175"
   },
   {
+    "code": "wY",
+    "name": "Cadwell the Soul Shriven/Cadwell the Betrayer",
+    "id": "0ebce4d5f8edf3e2fbf35e4413d28e83daa85da9"
+  },
+  {
     "code": "wZ",
     "name": "Cygnus Standard Bearer",
     "id": "885db11dd2b0d0401c1acfa79ea13cff3217b611"
+  },
+  {
+    "code": "xb",
+    "name": "Apprentice Necromancer",
+    "id": "a54be926b6d35da060d68fc1678ead3378bc09dc"
+  },
+  {
+    "code": "xc",
+    "name": "Sentinel Reclaimer",
+    "id": "53761efc83e7c303f2ee8f830d6a8608ac268db9"
   }
 ]
