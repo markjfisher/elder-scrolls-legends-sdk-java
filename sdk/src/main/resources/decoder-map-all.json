@@ -5583,5 +5583,10 @@
     "code": "xc",
     "name": "Sentinel Reclaimer",
     "id": "53761efc83e7c303f2ee8f830d6a8608ac268db9"
+  },
+  {
+    "code": "xe",
+    "name": "Old Salty's Assault",
+    "id": "1bbdece90c8731146c256c5429e442e22aba86e5"
   }
 ]
